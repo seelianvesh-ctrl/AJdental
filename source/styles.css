@@ -349,3 +349,18 @@ dialog .doctor-reg{margin-top:-6px}
 .detail-hero.doctor-hero-img{aspect-ratio:4/3.4;object-position:50% 10%}
 @media(max-width:780px){.hero-frame.hero-duo{aspect-ratio:1.02}}
 @media(max-width:570px){.hero-frame.hero-duo{aspect-ratio:.98}.doctor-row{grid-template-columns:78px 1fr;gap:15px}.doctor-thumb{width:78px;height:78px}.detail-hero.doctor-hero-img{aspect-ratio:4/3.6}}
+
+/* Preview 03c: hero doctor stage — one full portrait, elegant switch (no collage) */
+.hero-frame.hero-stage{aspect-ratio:.85}
+.hero-stage .hero-photo{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .9s var(--ease)}
+.hero-stage .hero-photo.is-active{opacity:1}
+.hero-photo-ankitha{object-position:50% 28%}
+.hero-photo-joe{object-position:50% 15%}
+.motion-off .hero-stage .hero-photo{transition:none}
+.hero-toggle{display:flex;gap:6px;margin-top:14px;padding:5px;background:var(--white);border:1px solid #d8d8ce;border-radius:12px;box-shadow:0 10px 28px rgba(16,46,58,.07)}
+.hero-doc-btn{flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:1px;padding:10px 15px;border:0;border-radius:8px;background:transparent;text-align:left;min-height:54px;transition:background .3s,color .3s}
+.hero-doc-name{font-size:13.5px;font-weight:700;letter-spacing:-.01em;line-height:1.35}
+.hero-doc-role{font-size:10.5px;color:var(--muted);letter-spacing:.02em;line-height:1.45}
+.hero-doc-btn.is-active{background:var(--navy);color:var(--white)}
+.hero-doc-btn.is-active .hero-doc-role{color:#c9d6da}
+@media(max-width:570px){.hero-frame.hero-stage{aspect-ratio:.92}.hero-doc-btn{padding:9px 11px;min-height:50px}.hero-doc-name{font-size:12.5px}.hero-doc-role{font-size:9.5px}}

@@ -68,7 +68,7 @@ if('IntersectionObserver' in window) {
  sections.forEach(s => io.observe(s));
 }
 /* Scroll progress, floating Book Appointment button and a whisper of hero parallax. */
-const progressBar = $('scrollProgress'); const floatBook = $('floatBook'); const heroPhoto = $('heroPhoto');
+const progressBar = $('scrollProgress'); const floatBook = $('floatBook'); const heroStage = $('heroStage');
 let ticking = false;
 function onScroll() {
  if(ticking) return; ticking = true;
@@ -77,11 +77,26 @@ function onScroll() {
   const y = window.scrollY || 0;
   progressBar.style.transform = `scaleX(${max > 0 ? Math.min(1, y / max) : 0})`;
   floatBook.classList.toggle('show', y > 620);
-  if(motionAllowed && heroPhoto && y < innerHeight) heroPhoto.style.transform = `translateY(${Math.min(16, y * 0.045)}px) scale(1.07)`;
+  if(motionAllowed && heroStage && y < innerHeight) heroStage.style.transform = `translateY(${Math.min(14, y * 0.04)}px)`;
   ticking = false;
  });
 }
 addEventListener('scroll', onScroll, {passive:true}); onScroll();
+/* Hero doctor stage: one full portrait at a time, crossfading between our two doctors. */
+const heroBtns = [...document.querySelectorAll('[data-hero-doc]')];
+const heroImgs = [...document.querySelectorAll('[data-hero-photo]')];
+let heroTimer = null, heroAuto = true;
+function showHeroDoc(id) {
+ heroImgs.forEach(img => { const on = img.dataset.heroPhoto === id; img.classList.toggle('is-active', on); if(on) img.removeAttribute('aria-hidden'); else img.setAttribute('aria-hidden','true'); });
+ heroBtns.forEach(b => { const on = b.dataset.heroDoc === id; b.classList.toggle('is-active', on); b.setAttribute('aria-pressed', String(on)); });
+}
+function heroOrder() { return heroBtns.map(b => b.dataset.heroDoc); }
+function heroAdvance() { if(!motionAllowed) return; const order = heroOrder(); const cur = (heroBtns.find(b => b.classList.contains('is-active')) || {}).dataset?.heroDoc; showHeroDoc(order[(order.indexOf(cur) + 1) % order.length]); }
+function heroPlay() { if(!motionAllowed || !heroAuto || heroImgs.length < 2) return; clearInterval(heroTimer); heroTimer = setInterval(heroAdvance, 6000); }
+function heroPause() { clearInterval(heroTimer); }
+heroBtns.forEach(b => b.addEventListener('click', () => { heroAuto = false; heroPause(); showHeroDoc(b.dataset.heroDoc); }));
+if(heroStage) { heroStage.addEventListener('pointerenter', heroPause); heroStage.addEventListener('pointerleave', heroPlay); heroStage.addEventListener('focusin', heroPause); heroStage.addEventListener('focusout', heroPlay); }
+heroPlay();
 /* Treatment tabs (keyboard-operable, WAI-ARIA tabs pattern). */
 const tabs = [...document.querySelectorAll('[data-care-tab]')];
 function activateCare(tab, focus = false) {
