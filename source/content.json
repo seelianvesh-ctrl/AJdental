@@ -197,14 +197,17 @@
         11
       ],
       "current_credentials_independently_verified": false,
-      "portrait_available": false,
+      "portrait_available": true,
       "portrait_placeholder_is_a_real_person": false,
-      "final_profile_approval_required": true
+      "final_profile_approval_required": true,
+      "registration_no": "A16267",
+      "credentials_source": "Client-supplied visiting card and clinic board, confirmed by client 14 Oct 2026",
+      "client_confirmed": true,
+      "portrait_asset": "assets/doctor-joe.webp"
     },
     {
-      "name": "Dr. Ankitha Masa",
-      "name_variant_from_graphic": "Dr. M. Ankitha",
-      "display_credentials": "MDS · Oral Medicine & Radiology",
+      "name": "Dr. M. Ankitha",
+      "display_credentials": "MDS, FFA · Oral Medicine & Radiologist · Cosmetologist · Asst. Professor",
       "bio_draft": "Dental consultations, oral-health assessment and treatment planning.",
       "public_material_source_refs": [
         9,
@@ -213,11 +216,15 @@
       ],
       "current_credentials_independently_verified": false,
       "portrait_asset": "assets/doctor-ankitha.webp",
-      "final_profile_approval_required": true
+      "final_profile_approval_required": true,
+      "previous_display_name": "Dr. Ankitha Masa",
+      "registration_no": "A23045",
+      "credentials_source": "Client-supplied visiting card and clinic board, confirmed by client 14 Oct 2026",
+      "client_confirmed": true
     }
   ],
   "treatment_copy_status": "Curated draft topics based on research. Current services, provider, terminology and procedure-specific scope need clinician approval before launch. No advanced unverified therapies or dermatologist claims.",
-  "asset_status": "Actual public clinic-gallery business photographs for clinic/doctor sections. LOGO LOCKED (client decision, 14 Oct 2026): Ivory Primary — ivory tooth with navy face silhouette; generated as assets/aj-mark-ivory.png from the existing mark, shown in a navy chip on light surfaces; navy favicon tile assets/aj-favicon.png. A print-ready vector (SVG/AI) is still recommended for outdoor signage. Service-card visuals are AI-generated illustrative images labelled 'Illustrative' on the site; all 11 are dedicated images matched to their service (whitening and smile-design images generated and swapped in Preview 03). They are not AJ patients, staff or premises. No competitor photos or before/after images.",
+  "asset_status": "Actual public clinic-gallery business photographs for clinic/doctor sections. LOGO LOCKED (client decision, 14 Oct 2026): Ivory Primary — ivory tooth with navy face silhouette; generated as assets/aj-mark-ivory.png from the existing mark, shown in a navy chip on light surfaces; navy favicon tile assets/aj-favicon.png. A print-ready vector (SVG/AI) is still recommended for outdoor signage. Service-card visuals are AI-generated illustrative images labelled 'Illustrative' on the site; all 11 are dedicated images matched to their service (whitening and smile-design images generated and swapped in Preview 03). They are not AJ patients, staff or premises. No competitor photos or before/after images. Dr. B. Joe Praveen portrait supplied by client 14 Oct 2026 (assets/doctor-joe.webp); both doctors now shown with portraits in the doctors section.",
   "account_actions": {
     "current_aj_google_profile_exists": true,
     "client_is_claiming_legacy_google_profile": true,

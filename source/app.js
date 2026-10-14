@@ -143,11 +143,14 @@ function showCare(id, trigger) {
 }
 function showDoctor(id, trigger) {
  const joe = id === 'joe';
- const name = joe ? 'Dr. B. Joe Praveen' : 'Dr. Ankitha Masa';
- const role = joe ? 'MDS · Orthodontist' : 'MDS · Oral Medicine & Radiology';
- const text = joe ? 'Dr. Joe Praveen looks after teeth alignment and bite-related questions. If you are considering orthodontic care, start by discussing your concerns with us and the options that may be suitable.' : 'Dr. Ankitha Masa looks after dental consultations, oral-health assessment and treatment planning. If you are unsure where to begin, book a general dental consultation with us.';
- const msg = joe ? 'Hi AJ Dental, I would like to book an orthodontic consultation with Dr. B. Joe Praveen. Please let me know the available slots.' : 'Hi AJ Dental, I would like to book an appointment with Dr. Ankitha Masa. Please let me know the available slots.';
- $('detailContent').innerHTML = `<p class="dialog-kicker">Meet your dentist</p><h2 class="dialog-title" id="detailTitle">${esc(name)}</h2><p class="doctor-role">${esc(role)}</p><p class="dialog-description">${esc(text)}</p><div class="detail-block"><h3>Plan your visit</h3><p>Message or call us to ask about availability. We’re open Monday–Saturday, 10 AM–8 PM, and closed on Sunday.</p><div class="dialog-actions"><a class="btn btn-primary" href="${esc(waLink(msg))}" target="_blank" rel="noopener noreferrer">${chat} Book Appointment</a><a class="text-link" href="tel:+917997911390">Call us instead</a></div></div>`;
+ const name = joe ? 'Dr. B. Joe Praveen' : 'Dr. M. Ankitha';
+ const role = joe ? 'MDS · Orthodontist' : 'MDS, FFA · Oral Medicine & Radiologist · Cosmetologist · Asst. Professor';
+ const reg = joe ? 'Reg No: A16267' : 'Reg No: A23045';
+ const text = joe ? 'Dr. B. Joe Praveen looks after teeth alignment and bite-related questions. If you are considering orthodontic care, start by discussing your concerns with us and the options that may be suitable.' : 'Dr. M. Ankitha looks after dental consultations, oral-health assessment and treatment planning, and our facial-aesthetics consultations. If you are unsure where to begin, book a general dental consultation with us.';
+ const msg = joe ? 'Hi AJ Dental, I would like to book an orthodontic consultation with Dr. B. Joe Praveen. Please let me know the available slots.' : 'Hi AJ Dental, I would like to book an appointment with Dr. M. Ankitha. Please let me know the available slots.';
+ const media = document.querySelector(`[data-doctor-img="${id}"]`);
+ const img = media ? `<img class="detail-hero" src="${media.src}" alt="">` : '';
+ $('detailContent').innerHTML = `${img}<p class="dialog-kicker">Meet your dentist</p><h2 class="dialog-title" id="detailTitle">${esc(name)}</h2><p class="doctor-role">${esc(role)}</p><p class="doctor-reg">${esc(reg)}</p><p class="dialog-description">${esc(text)}</p><div class="detail-block"><h3>Plan your visit</h3><p>Message or call us to ask about availability. We’re open Monday–Saturday, 10 AM–8 PM, and closed on Sunday.</p><div class="dialog-actions"><a class="btn btn-primary" href="${esc(waLink(msg))}" target="_blank" rel="noopener noreferrer">${chat} Book Appointment</a><a class="text-link" href="tel:+917997911390">Call us instead</a></div></div>`;
  openDialog($('detailDialog'), trigger);
 }
 /* Photo viewer uses only the actual business-gallery photos embedded in the file. */

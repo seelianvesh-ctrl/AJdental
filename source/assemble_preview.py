@@ -2,7 +2,7 @@ from pathlib import Path
 from urllib.parse import quote
 import json, base64, html, re
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path('/home/user/aj-dental-website')
 site = json.loads((ROOT / 'content.json').read_text())
 WA_BASE = site['whatsapp']  # https://wa.me/917997911390
 
@@ -89,7 +89,7 @@ public_care = [{k: c[k] for k in ['id','group','title','short','detail','questio
 
 replacements = {
  'FONTS':'\n'.join(fonts),'CSS':(ROOT / 'styles.css').read_text(),'JS':(ROOT / 'app.js').read_text(),
- 'MARK':data_uri('assets/aj-mark-ivory.webp','image/webp'),'FAVICON':data_uri('assets/aj-favicon.png','image/png'),'DOCTOR':data_uri('assets/doctor-ankitha.webp','image/webp'),
+ 'MARK':data_uri('assets/aj-mark-ivory.webp','image/webp'),'FAVICON':data_uri('assets/aj-favicon.png','image/png'),'DOCTOR':data_uri('assets/doctor-ankitha.webp','image/webp'),'DOCTOR_JOE':data_uri('assets/doctor-joe.webp','image/webp'),
  'OPERATORY':data_uri('assets/clinic-operatory.webp','image/webp'),'RECEPTION':data_uri('assets/clinic-reception.webp','image/webp'),'EXTERIOR':data_uri('assets/clinic-exterior.webp','image/webp'),
  'STARS':stars,'MAP':html.escape(site['maps_url'], quote=True),'DIRECTIONS':html.escape(site['directions_url'], quote=True),
  'WA_GENERAL':html.escape(WA_GENERAL, quote=True),'WA_AESTHETICS':html.escape(WA_AESTHETICS, quote=True),'WA_HAIR':html.escape(WA_HAIR, quote=True),
@@ -117,6 +117,9 @@ assert 'Request a visit' not in s and 'Request your visit' not in s
 assert 'Book Appointment' in s and s.count('wa.me/917997911390?text=') >= 18, 'Direct WhatsApp deep links expected throughout'
 assert 'instagram.com/aj_dental_facial_aesthetics' in s
 assert all((ROOT / c['image']).exists() for c in CARE), 'Every service needs an image'
+assert 'A16267' in s and 'A23045' in s, 'Doctor registration numbers must appear'
+assert 'Dr. B. Joe Praveen' in s and 'Dr. M. Ankitha' in s, 'Visiting-card doctor names must appear'
+assert 'Ankitha Masa' not in s, 'Use the visiting-card name Dr. M. Ankitha everywhere'
 (ROOT / 'AJ_Dental_Preview.html').write_text(s)
 (ROOT / 'index.html').write_text(s)
 print('Generated self-contained HTML:', len(s.encode()), 'bytes; Google reviews:', len(site['reviews']), 'of', site['review_policy']['target_count'])
