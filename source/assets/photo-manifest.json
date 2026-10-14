@@ -1,0 +1,42 @@
+[
+  {
+    "name": "doctor-ankitha",
+    "path": "assets/doctor-ankitha.webp",
+    "source_id": "jd-doctor",
+    "source_url": "https://content.jdmagicbox.com/v2/comp/kakinada/y4/9999px884.x884.210110093536.p3y4/catalogue/aj-dental-and-facial-aesthetics-ayodyanagar-kakinada-dental-clinics-si0zfqcx7h.jpg?w=1600&q=85",
+    "alterations": "Crop/resize and minor non-generative colour/contrast correction only. No synthetic people or premises.",
+    "status": "Internal design preview only; current accuracy, rights and publication approval pending."
+  },
+  {
+    "name": "clinic-operatory",
+    "path": "assets/clinic-operatory.webp",
+    "source_id": "wheree-02",
+    "source_url": "https://static.where-e.com/India/Andhra_Pradesh/East_Godavari/Aj-Dental-And-Facial-Aesthetics_67dee75df3ecab017fed95e05553bfe1.jpg",
+    "alterations": "Crop/resize and minor non-generative colour/contrast correction only. No synthetic people or premises.",
+    "status": "Internal design preview only; current accuracy, rights and publication approval pending."
+  },
+  {
+    "name": "clinic-reception",
+    "path": "assets/clinic-reception.webp",
+    "source_id": "wheree-06",
+    "source_url": "https://static.where-e.com/India/Andhra_Pradesh/East_Godavari/Aj-Dental-And-Facial-Aesthetics_cc7f93757c61b923caea407ba2a127d6.jpg",
+    "alterations": "Crop/resize and minor non-generative colour/contrast correction only. No synthetic people or premises.",
+    "status": "Internal design preview only; current accuracy, rights and publication approval pending."
+  },
+  {
+    "name": "clinic-exterior",
+    "path": "assets/clinic-exterior.webp",
+    "source_id": "wheree-04",
+    "source_url": "https://static.where-e.com/India/Andhra_Pradesh/East_Godavari/Aj-Dental-And-Facial-Aesthetics_fedd51680e1d1c87fd86753a735b0f75.jpg",
+    "alterations": "Crop/resize and minor non-generative colour/contrast correction only. No synthetic people or premises.",
+    "status": "Internal design preview only; current accuracy, rights and publication approval pending."
+  },
+  {
+    "name": "aj-mark",
+    "path": "assets/aj-mark.png",
+    "source_id": "jd-second-catalogue-3",
+    "alterations": "Existing golden logo mark cropped from clinic-branded header; dark background converted to transparency. No patient/body portion used.",
+    "status": "Existing-brand preview reference; request original logo vector and brand approval before launch.",
+    "source_url": "https://content1.jdmagicbox.com/v2/comp/kakinada/n5/9999px884.x884.250712233030.r9n5/catalogue/aj-dental-and-facial-aesthetics-gandhi-nagar-kakinada-dentists-w49hnau8ra.jpg?w=1600&q=85"
+  }
+]

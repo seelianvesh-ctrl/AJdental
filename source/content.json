@@ -1,0 +1,229 @@
+{
+  "preview_version": "03",
+  "client_confirmed_on": "2026-10-14",
+  "name": "AJ Dental & Facial Aesthetics",
+  "phone": "7997911390",
+  "phone_e164": "+917997911390",
+  "phone_display": "+91 79979 11390",
+  "whatsapp": "https://wa.me/917997911390",
+  "address": "road no:3, Ayodhya Nagar, Kakinada, Andhra Pradesh 533001",
+  "opening_hours": "Monday–Saturday, 10:00 AM–8:00 PM. Sunday closed.",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+  "directions_url": "https://www.google.com/maps/dir/?api=1&destination=AJ+Dental+and+Facial+Aesthetics+Kakinada&destination_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ",
+  "instagram_url": "https://www.instagram.com/aj_dental_facial_aesthetics/",
+  "legacy_name": "Jubeda Dental",
+  "legacy_placement": "FAQ and small footer line only; never hero or primary identity",
+  "dental_priority": "Dental-first with facial-aesthetics/hair consultation secondary",
+  "booking_flow": "Direct WhatsApp deep links (wa.me/917997911390) with service-specific prefilled messages, plus tel:+917997911390 call links. No forms, no message builder, nothing collected by the website.",
+  "implant_fee": null,
+  "other_phone_numbers": [],
+  "google_rating_snapshot": {
+    "rating": 5.0,
+    "review_count": 62,
+    "observed_date": "2026-10-14",
+    "recheck_before_publication": true,
+    "not_live_api": true
+  },
+  "review_policy": {
+    "allowed_source": "Current AJ Google Maps profile only",
+    "target_count": 10,
+    "verified_count_in_preview": 10,
+    "remaining_count": 0,
+    "missing_reviews_fabricated": false,
+    "selection": "10 unique named reviews from the current AJ Google profile: 3 verified from the live profile plus 7 further unique reviews from client-supplied Google screenshots (14 Oct 2026). 11 unique candidates were located; the briefest (Kommanapalli Ashmi) was omitted. Duplicates across the three screenshots were removed. Selection is editorial, not an objective ranking.",
+    "publication_permissions_and_clinical_review_required": true
+  },
+  "reviews": [
+    {
+      "name": "Deepika Cheemala",
+      "quote": "I was very scared before my root canal treatment, but the doctor explained everything clearly and made me feel comfortable. The procedure was almost painless, and the staff were polite and supportive.",
+      "full_text": "I had a very good experience at AJ Dental Clinic. I was very scared before my root canal treatment, but the doctor explained everything clearly and made me feel comfortable. The procedure was almost painless, and the staff were polite and supportive. The clinic was clean and well maintained. Thank you doctor and team for taking good care of me. I would definitely recommend this clinic to others.",
+      "rating": 5,
+      "date_label_observed": "2 months ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": true,
+      "highlights": [
+        "explained everything clearly",
+        "almost painless",
+        "polite and supportive"
+      ]
+    },
+    {
+      "name": "Tarun Gundrathi",
+      "quote": "From the moment I walked in, I felt genuinely cared for and comfortable. The staff is warm and professional, and the doctors are incredibly skilled and attentive.",
+      "full_text": "I had an amazing experience with this team of dental and aesthetic doctors! From the moment I walked in, I felt genuinely cared for and comfortable. The staff is warm and professional, and the doctors are incredibly skilled and attentive.\n\nThey explained every step clearly and made sure I was relaxed throughout the procedures. The results exceeded my expectations — my smile looks better than ever, and I feel so much more confident now.\n\nI truly appreciate their attention to detail, modern equipment, and the extra effort they put into ensuring patient comfort. I highly recommend them to anyone looking for top-quality dental and aesthetic treatments. Thank you for the exceptional care and for giving me a reason to smile brighter!",
+      "rating": 5,
+      "date_label_observed": "a year ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": true,
+      "highlights": [
+        "genuinely cared for",
+        "explained every step clearly",
+        "results exceeded my expectations",
+        "highly recommend"
+      ]
+    },
+    {
+      "name": "Adhilaxmi Kondru",
+      "quote": "I visit in aj dental clinic Dr ankitha mam thank so much mam very clear treatment plan nd good conversation thank u mam",
+      "full_text": "I visit in aj dental clinic Dr ankitha mam thank so much mam very clear treatment plan nd good conversation thank u mam",
+      "rating": 5,
+      "date_label_observed": "8 months ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": false,
+      "highlights": [
+        "very clear treatment plan",
+        "good conversation"
+      ]
+    },
+    {
+      "name": "Venkat Korumilli",
+      "quote": "Best dental clinic.. Dr. Ankitha is highly skilled and friendly in nature...",
+      "full_text": "Best dental clinic.. Dr. Ankitha is highly skilled and friendly in nature...",
+      "rating": 5,
+      "date_label_observed": "5 months ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": false,
+      "highlights": [
+        "Best dental clinic",
+        "highly skilled",
+        "friendly in nature"
+      ]
+    },
+    {
+      "name": "Balaram Potnuru",
+      "quote": "Excellent treatment and good hospital with hospitality Dr.Ankitha Madam thank you so much for your services",
+      "full_text": "Excellent treatment and good hospital with hospitality Dr.Ankitha Madam thank you so much for your services",
+      "rating": 5,
+      "date_label_observed": "8 months ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": false,
+      "highlights": [
+        "Excellent treatment"
+      ]
+    },
+    {
+      "name": "Surya Vardhan Dadala",
+      "quote": "I came to aj dental clinic dr Ankitha mam explained is very good nd nice treatment thank u mam",
+      "full_text": "I came to aj dental clinic dr Ankitha mam explained is very good nd nice treatment thank u mam",
+      "rating": 5,
+      "date_label_observed": "7 months ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": false,
+      "highlights": [
+        "very good",
+        "nice treatment"
+      ]
+    },
+    {
+      "name": "Boddapati Vijayalaxmi",
+      "quote": "I came to aj dental clinic from dr Ankitha mam thank u for your good explain nd good treatment",
+      "full_text": "I came to aj dental clinic from dr Ankitha mam thank u for your good explain nd good treatment",
+      "rating": 5,
+      "date_label_observed": "7 months ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": false,
+      "highlights": [
+        "good treatment"
+      ]
+    },
+    {
+      "name": "Yamdamuri Babykumari",
+      "quote": "One of the best dental experiences I've had. The doctors explained everything patiently.",
+      "full_text": "One of the best dental experiences I've had. The doctors explained everything patiently.",
+      "rating": 5,
+      "date_label_observed": "a month ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": false,
+      "highlights": [
+        "best dental experiences",
+        "explained everything patiently"
+      ]
+    },
+    {
+      "name": "Chandu Reddy K",
+      "quote": "Good treatment dr. Joe praveen thank u sir",
+      "full_text": "Good treatment dr. Joe praveen thank u sir",
+      "rating": 5,
+      "date_label_observed": "7 months ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": false,
+      "highlights": [
+        "Good treatment"
+      ]
+    },
+    {
+      "name": "Sindhu Yandamuri",
+      "quote": "Excellent treatment and very friendly doctors. Highly recommended!",
+      "full_text": "Excellent treatment and very friendly doctors. Highly recommended!",
+      "rating": 5,
+      "date_label_observed": "a month ago",
+      "source": "Google",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
+      "checked_date": "2026-10-14",
+      "is_excerpt": false,
+      "highlights": [
+        "Excellent treatment",
+        "very friendly doctors",
+        "Highly recommended"
+      ]
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dr. B. Joe Praveen",
+      "display_credentials": "MDS · Orthodontist",
+      "bio_draft": "Orthodontic consultations for teeth alignment and bite-related concerns.",
+      "public_material_source_refs": [
+        10,
+        11
+      ],
+      "current_credentials_independently_verified": false,
+      "portrait_available": false,
+      "portrait_placeholder_is_a_real_person": false,
+      "final_profile_approval_required": true
+    },
+    {
+      "name": "Dr. Ankitha Masa",
+      "name_variant_from_graphic": "Dr. M. Ankitha",
+      "display_credentials": "MDS · Oral Medicine & Radiology",
+      "bio_draft": "Dental consultations, oral-health assessment and treatment planning.",
+      "public_material_source_refs": [
+        9,
+        10,
+        11
+      ],
+      "current_credentials_independently_verified": false,
+      "portrait_asset": "assets/doctor-ankitha.webp",
+      "final_profile_approval_required": true
+    }
+  ],
+  "treatment_copy_status": "Curated draft topics based on research. Current services, provider, terminology and procedure-specific scope need clinician approval before launch. No advanced unverified therapies or dermatologist claims.",
+  "asset_status": "Actual public clinic-gallery business photographs for clinic/doctor sections. LOGO LOCKED (client decision, 14 Oct 2026): Ivory Primary — ivory tooth with navy face silhouette; generated as assets/aj-mark-ivory.png from the existing mark, shown in a navy chip on light surfaces; navy favicon tile assets/aj-favicon.png. A print-ready vector (SVG/AI) is still recommended for outdoor signage. Service-card visuals are AI-generated illustrative images labelled 'Illustrative' on the site; all 11 are dedicated images matched to their service (whitening and smile-design images generated and swapped in Preview 03). They are not AJ patients, staff or premises. No competitor photos or before/after images.",
+  "account_actions": {
+    "current_aj_google_profile_exists": true,
+    "client_is_claiming_legacy_google_profile": true,
+    "profile_edits_performed_by_assistant": false,
+    "github_changes_performed": false,
+    "vercel_deployment_performed": false
+  },
+  "publication_ready": false
+}
