@@ -40,6 +40,7 @@ def card(item, n):
             f'<div class="care-body"><span class="care-number" aria-hidden="true">{n:02}</span><h3>{html.escape(item["title"])}</h3><p>{html.escape(item["short"])}</p>'
             f'<div class="care-actions">'
             f'<button class="care-more" data-care="{item["id"]}">Details</button>'
+            f'<a class="care-wa" href="{html.escape(item["wa_url"], quote=True)}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp AJ Dental about {html.escape(item["title"], quote=True)}">{CHAT}</a>'
             f'<a class="care-call" href="tel:+917997911390" aria-label="Call AJ Dental about {html.escape(item["title"], quote=True)}">{PHONE}</a></div></div></article>')
 
 def highlight(text, phrases):
@@ -100,7 +101,8 @@ for key, value in replacements.items():
 assert not re.search(r'@@[A-Z_]+@@', s), 'Unreplaced template token'
 for disallowed in ['9008553086','9010000021','7383581638','25,000','25000','localhost','127.0.0.1']:
     assert disallowed not in s, disallowed
-assert '<meta name="robots" content="noindex,nofollow">' in s
+assert '<meta name="robots" content="index,follow">' in s and 'noindex' not in s, 'Site is live: must be indexable, no preview markers'
+assert 'Design preview' not in s and 'Not live' not in s, 'No preview wording may ship'
 assert 'aggregateRating' not in json.dumps(schema)
 assert len(site['reviews']) == 10 and all(r['source'] == 'Google' for r in site['reviews'])
 assert len({r['name'] for r in site['reviews']}) == 10, 'Reviewer names must be unique'

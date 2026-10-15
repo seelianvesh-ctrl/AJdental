@@ -1,5 +1,4 @@
 {
-  "preview_version": "03",
   "client_confirmed_on": "2026-10-14",
   "name": "AJ Dental & Facial Aesthetics",
   "phone": "7997911390",
@@ -27,11 +26,11 @@
   "review_policy": {
     "allowed_source": "Current AJ Google Maps profile only",
     "target_count": 10,
-    "verified_count_in_preview": 10,
     "remaining_count": 0,
     "missing_reviews_fabricated": false,
     "selection": "10 unique named reviews from the current AJ Google profile: 3 verified from the live profile plus 7 further unique reviews from client-supplied Google screenshots (14 Oct 2026). 11 unique candidates were located; the briefest (Kommanapalli Ashmi) was omitted. Duplicates across the three screenshots were removed. Selection is editorial, not an objective ranking.",
-    "publication_permissions_and_clinical_review_required": true
+    "publication_permissions_and_clinical_review_required": true,
+    "verified_count": 10
   },
   "reviews": [
     {
@@ -290,7 +289,7 @@
       "mobile dock"
     ],
     "removed": [
-      "4 per-service card buttons (contextual booking stays in Details dialogs)",
+      "4 per-service card buttons replaced by small WhatsApp + call icon circles (contextual messages kept); Details dialog keeps contextual booking",
       "info-strip Book tile",
       "doctors section Book (Call us kept)",
       "visit section Book (Directions + Call kept)",

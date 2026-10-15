@@ -52,6 +52,8 @@ async def main():
         # Service cards stay quiet: Details dialog carries the contextual WhatsApp booking (read href only; never navigate).
         card = p.locator('.care-item', has_text='Dental implants').first
         assert await card.locator('.care-book').count() == 0, 'No per-card Book button'
+        wahref = await card.locator('.care-wa').get_attribute('href')
+        assert 'dental implants' in unquote(wahref).lower(), wahref
         assert await card.locator('.care-call').get_attribute('href') == 'tel:+917997911390'
         await card.locator('.care-media').click()
         assert await p.locator('#detailDialog').is_visible()
@@ -59,7 +61,7 @@ async def main():
         dhref = await p.locator('#detailDialog .btn-primary').get_attribute('href')
         assert 'dental implants' in unquote(dhref).lower(), dhref
         await p.keyboard.press('Escape')
-        results['checks'].append('Service cards: image, call link, details dialog with contextual WhatsApp booking.')
+        results['checks'].append('Service cards: image, WhatsApp + call icon links with context, details dialog with contextual booking.')
 
         # Nav Book Appointment is a direct WhatsApp anchor.
         navhref = await p.locator('.nav-action').get_attribute('href')
