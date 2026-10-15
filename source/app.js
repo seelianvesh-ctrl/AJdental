@@ -97,28 +97,6 @@ function heroPause() { clearInterval(heroTimer); }
 heroBtns.forEach(b => b.addEventListener('click', () => { heroAuto = false; heroPause(); showHeroDoc(b.dataset.heroDoc); }));
 if(heroStage) { heroStage.addEventListener('pointerenter', heroPause); heroStage.addEventListener('pointerleave', heroPlay); heroStage.addEventListener('focusin', heroPause); heroStage.addEventListener('focusout', heroPlay); }
 heroPlay();
-/* Treatment tabs (keyboard-operable, WAI-ARIA tabs pattern). */
-const tabs = [...document.querySelectorAll('[data-care-tab]')];
-function activateCare(tab, focus = false) {
- tabs.forEach(t => {
-  const selected = t === tab;
-  t.setAttribute('aria-selected', String(selected)); t.tabIndex = selected ? 0 : -1;
-  const panel = $(t.getAttribute('aria-controls')); panel.hidden = !selected;
-  if(selected && motionAllowed) { panel.classList.remove('panel-in'); void panel.offsetWidth; panel.classList.add('panel-in'); }
- });
- if(focus) tab.focus();
-}
-tabs.forEach((tab, idx) => {
- tab.addEventListener('click', () => activateCare(tab));
- tab.addEventListener('keydown', e => {
-  let target;
-  if(e.key === 'ArrowRight') target = (idx + 1) % tabs.length;
-  else if(e.key === 'ArrowLeft') target = (idx - 1 + tabs.length) % tabs.length;
-  else if(e.key === 'Home') target = 0;
-  else if(e.key === 'End') target = tabs.length - 1;
-  if(target !== undefined) { e.preventDefault(); activateCare(tabs[target], true); }
- });
-});
 /* First-visit journey: tap through the four steps. */
 const journeySteps = [
  'Tap any Book Appointment button and WhatsApp opens with a message already written for you — just press send. Prefer speaking first? Call us instead.',
@@ -159,13 +137,13 @@ function showCare(id, trigger) {
 function showDoctor(id, trigger) {
  const joe = id === 'joe';
  const name = joe ? 'Dr. B. Joe Praveen' : 'Dr. M. Ankitha';
- const role = joe ? 'MDS · Orthodontist' : 'MDS, FFA · Oral Medicine & Radiologist · Cosmetologist · Asst. Professor';
+ const role = joe ? 'MDS · Orthodontist · Assistant Professor' : 'MDS · Oral Physician & Radiologist · Asst. Professor';
  const reg = joe ? 'Reg No: A16267' : 'Reg No: A23045';
- const text = joe ? 'Dr. B. Joe Praveen looks after teeth alignment and bite-related questions. If you are considering orthodontic care, start by discussing your concerns with us and the options that may be suitable.' : 'Dr. M. Ankitha looks after dental consultations, oral-health assessment and treatment planning, and our facial-aesthetics consultations. If you are unsure where to begin, book a general dental consultation with us.';
+ const text = joe ? 'Dr. B. Joe Praveen is our orthodontist and an Assistant Professor. He specialises in the diagnosis, prevention and correction of misaligned teeth and jaws, looking after patients who need braces, clear aligners, bite correction, teeth alignment and smile enhancement — helping them achieve a healthier, well-aligned and confident smile through personalised orthodontic care.' : 'Dr. M. Ankitha is a dental healthcare provider — MDS, Oral Physician & Radiologist, and an Assistant Professor. She authored the book “Cone Beam Computed Tomography: Oral and Maxillofacial Diagnosis & Applications”, which focuses on advanced dental radiography. She has also contributed to several international clinical research papers, exploring areas such as transcutaneous electrical nerve stimulation (TENS) on salivary flow in diabetic patients, maxillary odontomas, and forensic cheiloscopy.';
  const msg = joe ? 'Hi AJ Dental, I would like to book an orthodontic consultation with Dr. B. Joe Praveen. Please let me know the available slots.' : 'Hi AJ Dental, I would like to book an appointment with Dr. M. Ankitha. Please let me know the available slots.';
  const media = document.querySelector(`[data-doctor-img="${id}"]`);
  const img = media ? `<img class="detail-hero doctor-hero-img" src="${media.src}" alt="">` : '';
- $('detailContent').innerHTML = `${img}<p class="dialog-kicker">Meet your dentist</p><h2 class="dialog-title" id="detailTitle">${esc(name)}</h2><p class="doctor-role">${esc(role)}</p><p class="doctor-reg">${esc(reg)}</p><p class="dialog-description">${esc(text)}</p><div class="detail-block"><h3>Plan your visit</h3><p>Message or call us to ask about availability. We’re open Monday–Saturday, 10 AM–8 PM, and closed on Sunday.</p><div class="dialog-actions"><a class="btn btn-primary" href="${esc(waLink(msg))}" target="_blank" rel="noopener noreferrer">${chat} Book Appointment</a><a class="text-link" href="tel:+917997911390">Call us instead</a></div></div>`;
+ $('detailContent').innerHTML = `${img}<p class="dialog-kicker">Meet your dentist</p><h2 class="dialog-title" id="detailTitle">${esc(name)}</h2><p class="doctor-role">${esc(role)}</p><p class="doctor-reg">${esc(reg)}</p><p class="dialog-description">${esc(text)}</p><div class="detail-block"><h3>Plan your visit</h3><p>Message or call us to ask about availability. We’re open Monday–Saturday, 9 AM–8 PM, and Sundays by appointment.</p><div class="dialog-actions"><a class="btn btn-primary" href="${esc(waLink(msg))}" target="_blank" rel="noopener noreferrer">${chat} Book Appointment</a><a class="text-link" href="tel:+917997911390">Call us instead</a></div></div>`;
  openDialog($('detailDialog'), trigger);
 }
 /* Photo viewer uses only the actual business-gallery photos embedded in the file. */
@@ -230,3 +208,14 @@ addEventListener('resize', () => { cancelAnimationFrame(resizeFrame); resizeFram
 document.querySelectorAll('.faq-item').forEach(d => d.addEventListener('toggle', () => { if(d.open) document.querySelectorAll('.faq-item').forEach(other => { if(other !== d) other.open = false; }); }));
 $('year').textContent = new Intl.DateTimeFormat('en',{year:'numeric',timeZone:'Asia/Kolkata'}).format(new Date());
 })();
+/* Analytics: count the taps that matter. gtag exists only on the live host, so test/QA traffic is never recorded. */
+document.addEventListener('click', e => {
+ if(!window.gtag || !e.target.closest) return;
+ const a = e.target.closest('a[href]'); if(!a) return;
+ const href = a.href;
+ const label = (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 60);
+ if(href.includes('wa.me/')) gtag('event', 'whatsapp_click', {link_text: label, page_path: location.pathname});
+ else if(href.startsWith('tel:')) gtag('event', 'call_click', {link_text: label, page_path: location.pathname});
+ else if(href.includes('google.com/maps/dir')) gtag('event', 'directions_click', {link_text: label, page_path: location.pathname});
+ else if(/instagram\.com|facebook\.com|youtube\.com/.test(href)) gtag('event', 'social_click', {link_url: href});
+}, {passive:true});

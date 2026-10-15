@@ -7,12 +7,12 @@
   "phone_display": "+91 79979 11390",
   "whatsapp": "https://wa.me/917997911390",
   "address": "road no:3, Ayodhya Nagar, Kakinada, Andhra Pradesh 533001",
-  "opening_hours": "Monday–Saturday, 10:00 AM–8:00 PM. Sunday closed.",
+  "opening_hours": "Monday–Saturday, 9:00 AM–8:00 PM. Sunday by appointment.",
   "maps_url": "https://www.google.com/maps/search/?api=1&query=AJ+Dental+and+Facial+Aesthetics+Kakinada&query_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ&hl=en",
   "directions_url": "https://www.google.com/maps/dir/?api=1&destination=AJ+Dental+and+Facial+Aesthetics+Kakinada&destination_place_id=ChIJRYdwi9wpODoRpbL7DZVh6aQ",
   "instagram_url": "https://www.instagram.com/aj_dental_facial_aesthetics/",
   "legacy_name": "Jubeda Dental",
-  "legacy_placement": "FAQ and small footer line only; never hero or primary identity",
+  "legacy_placement": "FAQ answer (visible, for returning patients) + schema alternateName (invisible). Footer legacy line removed 2026-10-15 after client feedback; smart-call rationale: old GMB likely deleted, so continuity is kept where it helps (FAQ + entity data) without branding the page footer with the old name.",
   "dental_priority": "Dental-first with facial-aesthetics/hair consultation secondary",
   "booking_flow": "Direct WhatsApp deep links (wa.me/917997911390) with service-specific prefilled messages, plus tel:+917997911390 call links. No forms, no message builder, nothing collected by the website.",
   "implant_fee": null,
@@ -190,8 +190,8 @@
   "doctors": [
     {
       "name": "Dr. B. Joe Praveen",
-      "display_credentials": "MDS · Orthodontist",
-      "bio_draft": "Orthodontic consultations for teeth alignment and bite-related concerns.",
+      "display_credentials": "MDS · Orthodontist · Assistant Professor",
+      "bio_draft": "Dr. B. Joe Praveen is our orthodontist and an Assistant Professor. He specialises in the diagnosis, prevention and correction of misaligned teeth and jaws, looking after patients who need braces, clear aligners, bite correction, teeth alignment and smile enhancement — helping them achieve a healthier, well-aligned and confident smile through personalised orthodontic care.",
       "public_material_source_refs": [
         10,
         11
@@ -207,8 +207,8 @@
     },
     {
       "name": "Dr. M. Ankitha",
-      "display_credentials": "MDS, FFA · Oral Medicine & Radiologist · Cosmetologist · Asst. Professor",
-      "bio_draft": "Dental consultations, oral-health assessment and treatment planning.",
+      "display_credentials": "MDS · Oral Physician & Radiologist · Asst. Professor",
+      "bio_draft": "Dr. M. Ankitha is a dental healthcare provider — MDS, Oral Physician & Radiologist, and an Assistant Professor. She authored the book Cone Beam Computed Tomography: Oral and Maxillofacial Diagnosis & Applications, which focuses on advanced dental radiography. Dr. Ankitha has also contributed to several international clinical research papers, exploring areas such as transcutaneous electrical nerve stimulation (TENS) on salivary flow in diabetic patients, maxillary odontomas, and forensic cheiloscopy.",
       "public_material_source_refs": [
         9,
         10,
@@ -220,7 +220,8 @@
       "previous_display_name": "Dr. Ankitha Masa",
       "registration_no": "A23045",
       "credentials_source": "Client-supplied visiting card and clinic board, confirmed by client 14 Oct 2026",
-      "client_confirmed": true
+      "client_confirmed": true,
+      "credentials_full_from_visiting_card": "MDS, FFA · Oral Medicine & Radiologist · Cosmetologist · Asst. Professor (client chose the shorter display above on 2026-10-15; designation updated to Oral Physician & Radiologist per client feedback)"
     }
   ],
   "treatment_copy_status": "Curated draft topics based on research. Current services, provider, terminology and procedure-specific scope need clinician approval before launch. No advanced unverified therapies or dermatologist claims.",
@@ -232,5 +233,25 @@
     "github_changes_performed": false,
     "vercel_deployment_performed": false
   },
-  "publication_ready": false
+  "publication_ready": false,
+  "facebook_url": "https://www.facebook.com/people/AJ-Dental-Facial-Aesthetics/61577775253015/",
+  "youtube_url": "https://www.youtube.com/@AJ_Dental_Facial_Aesthetics",
+  "client_feedback_round": "2026-10-15: new Dr Joe Praveen photo; hours Mon–Sat 9 AM–8 PM + Sunday by appointment; Ankitha designation Oral Physician & Radiologist; services merged/reordered to 10 in one grid; Facebook + YouTube added; fuller doctor bios.",
+  "analytics": {
+    "provider": "Google Analytics 4",
+    "measurement_id": "G-LHL2H84Z37",
+    "stream_url": "https://ajdental.vercel.app",
+    "added": "2026-10-15",
+    "custom_events": [
+      "whatsapp_click",
+      "call_click",
+      "directions_click",
+      "social_click"
+    ],
+    "local_guard": "Tag loads only when hostname is not localhost/127.0.0.1, so development and QA traffic is excluded.",
+    "key_events_to_mark_in_ga_admin": [
+      "whatsapp_click",
+      "call_click"
+    ]
+  }
 }

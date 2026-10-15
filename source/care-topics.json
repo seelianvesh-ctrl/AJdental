@@ -1,10 +1,9 @@
 [
   {
     "id": "checkup",
-    "group": "routine",
     "title": "Check-ups & consultations",
     "short": "A place to begin when you have questions about your teeth, gums or mouth.",
-    "detail": "Start with a conversation about your concerns and an assessment of your oral health. You do not need to choose a procedure before meeting a dentist.",
+    "detail": "Start with a conversation about your concerns and an assessment of your oral health. Tell us about any changes you have noticed in your mouth or gums; you do not need to choose a procedure before meeting a dentist.",
     "booking": "General dental consultation",
     "image": "assets/checkup.webp",
     "alt": "Illustrative image: a dentist discussing a dental chart on a tablet with a patient",
@@ -12,13 +11,13 @@
     "questions": [
       "What should I bring to the appointment?",
       "Which concerns should we look at first?",
+      "I have noticed a change in my mouth — what should we check?",
       "What would the next step involve?"
     ],
     "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20a%20dental%20check-up%20and%20consultation.%20Please%20let%20me%20know%20the%20available%20slots."
   },
   {
     "id": "cleaning",
-    "group": "routine",
     "title": "Teeth cleaning & polishing",
     "short": "Professional cleaning, and looking after your teeth between visits.",
     "detail": "If you would like to enquire about professional teeth cleaning and polishing, book a visit and ask the dentist about your gum health and the care that may be appropriate for you.",
@@ -34,59 +33,7 @@
     "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20teeth%20cleaning%20and%20polishing.%20Please%20let%20me%20know%20the%20available%20slots."
   },
   {
-    "id": "screening",
-    "group": "routine",
-    "title": "Oral-health checks",
-    "short": "Questions about your mouth, gums or changes you have noticed.",
-    "detail": "A consultation is a sensible starting point for questions about your mouth or gums. Tell us about any changes you have noticed when you visit; we can’t diagnose from a website.",
-    "booking": "Oral-health consultation",
-    "image": "assets/oralcheck.webp",
-    "alt": "Illustrative image: a dentist examining a patient’s teeth with a dental mirror",
-    "wa": "Hi AJ Dental, I would like to book an appointment to discuss an oral health concern. Please let me know the available slots.",
-    "questions": [
-      "What should I tell the dentist about my concern?",
-      "Are any further checks or referrals appropriate?",
-      "When should I come back for a review?"
-    ],
-    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20to%20discuss%20an%20oral%20health%20concern.%20Please%20let%20me%20know%20the%20available%20slots."
-  },
-  {
-    "id": "fillings",
-    "group": "restore",
-    "title": "Dental fillings",
-    "short": "Discuss options when a tooth needs repair.",
-    "detail": "If a tooth needs repair, an assessment helps clarify the available options. Ask us what is suitable, what the treatment would involve and how to care for the tooth afterwards.",
-    "booking": "Dental fillings enquiry",
-    "image": "assets/filling.webp",
-    "alt": "Illustrative image: a tooth-coloured filling being placed and cured",
-    "wa": "Hi AJ Dental, I would like to book an appointment about a dental filling. Please let me know the available slots.",
-    "questions": [
-      "What are the repair options for this tooth?",
-      "What would treatment involve?",
-      "What follow-up or aftercare would I need?"
-    ],
-    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20about%20a%20dental%20filling.%20Please%20let%20me%20know%20the%20available%20slots."
-  },
-  {
-    "id": "root-canal",
-    "group": "restore",
-    "title": "Root canal care",
-    "short": "Explore the next step when a tooth needs attention on the inside.",
-    "detail": "If you have a question about root canal treatment or a tooth that is troubling you, start with an assessment. We can discuss the concern with you and which options may be suitable.",
-    "booking": "Root canal consultation",
-    "image": "assets/rootcanal.webp",
-    "alt": "Illustrative image: root canal treatment using a dental microscope",
-    "wa": "Hi AJ Dental, I would like to book an appointment about root canal treatment. Please let me know the available slots.",
-    "questions": [
-      "Is this treatment appropriate for my tooth?",
-      "What would the visits involve?",
-      "What should I ask about recovery and follow-up?"
-    ],
-    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20about%20root%20canal%20treatment.%20Please%20let%20me%20know%20the%20available%20slots."
-  },
-  {
     "id": "implants",
-    "group": "restore",
     "title": "Dental implants",
     "short": "A conversation about replacing a missing tooth.",
     "detail": "If you are considering a dental implant, ask about an assessment and the options for replacing your missing tooth. We’ll discuss suitability, the treatment plan and our current availability with you at your consultation.",
@@ -103,50 +50,80 @@
   },
   {
     "id": "dentures",
-    "group": "restore",
-    "title": "Dentures & bridges",
-    "short": "Discuss other approaches to replacing missing teeth.",
-    "detail": "There may be different ways to replace a missing tooth or several teeth. Use a consultation to ask about the options, their suitability and what to expect over time.",
-    "booking": "Dentures or bridges enquiry",
+    "title": "Crowns, bridges & dentures",
+    "short": "Discuss ways to repair a damaged tooth or replace missing teeth.",
+    "detail": "A crown can protect and rebuild a damaged tooth, while a bridge or dentures can replace missing teeth. Use a consultation to ask which option may suit you, what is involved in making and fitting it, and how to care for it over time.",
+    "booking": "Crowns, bridges or dentures enquiry",
     "image": "assets/dentures.webp",
     "alt": "Illustrative image: ceramic bridge work being prepared on a dental model",
-    "wa": "Hi AJ Dental, I would like to book an appointment about dentures or a bridge. Please let me know the available slots.",
+    "wa": "Hi AJ Dental, I would like to book an appointment about a crown, bridge or dentures. Please let me know the available slots.",
     "questions": [
-      "Which options could be considered?",
+      "Would a crown, a bridge or dentures suit my situation?",
       "What is involved in making and fitting them?",
       "How would I care for them afterwards?"
     ],
-    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20about%20dentures%20or%20a%20bridge.%20Please%20let%20me%20know%20the%20available%20slots."
+    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20about%20a%20crown%2C%20bridge%20or%20dentures.%20Please%20let%20me%20know%20the%20available%20slots."
+  },
+  {
+    "id": "root-canal",
+    "title": "Root canal treatment",
+    "short": "Explore the next step when a tooth needs attention on the inside.",
+    "detail": "If you have a question about root canal treatment or a tooth that is troubling you, start with an assessment. We can discuss the concern with you and which options may be suitable.",
+    "booking": "Root canal consultation",
+    "image": "assets/rootcanal.webp",
+    "alt": "Illustrative image: root canal treatment using a dental microscope",
+    "wa": "Hi AJ Dental, I would like to book an appointment about root canal treatment. Please let me know the available slots.",
+    "questions": [
+      "Is this treatment appropriate for my tooth?",
+      "What would the visits involve?",
+      "What should I ask about recovery and follow-up?"
+    ],
+    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20about%20root%20canal%20treatment.%20Please%20let%20me%20know%20the%20available%20slots."
   },
   {
     "id": "extraction",
-    "group": "restore",
-    "title": "Tooth removal",
-    "short": "Ask about assessment, what to expect and aftercare.",
-    "detail": "If you have been advised to consider removing a tooth, discuss the assessment, options and aftercare with us. This website is not a substitute for that individual conversation.",
+    "title": "Extractions & impactions",
+    "short": "Ask about tooth removal, including impacted (wisdom) teeth.",
+    "detail": "If you have been advised to consider removing a tooth — including an impacted wisdom tooth — discuss the assessment, options and aftercare with us. This website is not a substitute for that individual conversation.",
     "booking": "Tooth removal enquiry",
     "image": "assets/extraction.webp",
     "alt": "Illustrative image: a dentist explaining a wisdom tooth on a jaw model before treatment",
-    "wa": "Hi AJ Dental, I would like to book an appointment about tooth removal. Please let me know the available slots.",
+    "wa": "Hi AJ Dental, I would like to book an appointment about tooth removal or an impacted tooth. Please let me know the available slots.",
     "questions": [
       "Is removal the right next step for this tooth?",
+      "Is my tooth impacted, and what does that mean?",
       "What should I expect at the appointment?",
       "What aftercare and follow-up should I plan for?"
     ],
-    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20about%20tooth%20removal.%20Please%20let%20me%20know%20the%20available%20slots."
+    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20about%20tooth%20removal%20or%20an%20impacted%20tooth.%20Please%20let%20me%20know%20the%20available%20slots."
+  },
+  {
+    "id": "fillings",
+    "title": "Dental fillings",
+    "short": "Discuss options when a tooth needs repair.",
+    "detail": "If a tooth needs repair, an assessment helps clarify the available options. Ask us what is suitable, what the treatment would involve and how to care for the tooth afterwards.",
+    "booking": "Dental fillings enquiry",
+    "image": "assets/filling.webp",
+    "alt": "Illustrative image: a tooth-coloured filling being placed and cured",
+    "wa": "Hi AJ Dental, I would like to book an appointment about a dental filling. Please let me know the available slots.",
+    "questions": [
+      "What are the repair options for this tooth?",
+      "What would treatment involve?",
+      "What follow-up or aftercare would I need?"
+    ],
+    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20about%20a%20dental%20filling.%20Please%20let%20me%20know%20the%20available%20slots."
   },
   {
     "id": "orthodontics",
-    "group": "smile",
     "title": "Braces & teeth alignment",
-    "short": "Bring your questions about alignment or your bite.",
-    "detail": "If you are considering orthodontic care, start with a consultation about your teeth alignment and bite. Ask which options may be appropriate and what the process would involve.",
+    "short": "Braces, clear aligners and bite correction with our orthodontist.",
+    "detail": "If you are considering orthodontic care, start with a consultation about your teeth alignment and bite. Ask about braces, clear aligners and other options that may be appropriate, and what the process would involve.",
     "booking": "Orthodontic consultation",
     "image": "assets/braces.webp",
     "alt": "Illustrative image: a smiling patient wearing braces",
     "wa": "Hi AJ Dental, I would like to book an orthodontic consultation about braces and teeth alignment. Please let me know the available slots.",
     "questions": [
-      "What alignment options could suit me?",
+      "What alignment options could suit me — braces or clear aligners?",
       "How are the treatment and follow-up planned?",
       "What should I understand before deciding?"
     ],
@@ -154,7 +131,6 @@
   },
   {
     "id": "whitening",
-    "group": "smile",
     "title": "Teeth whitening",
     "short": "Explore your options for a brighter-looking smile.",
     "detail": "Before choosing whitening, ask about an assessment, suitability and current treatment options. Individual results vary, and we’ll happily go through your questions with you.",
@@ -171,7 +147,6 @@
   },
   {
     "id": "bonding",
-    "group": "smile",
     "title": "Smile design & cosmetic dentistry",
     "short": "Discuss a chipped tooth, a small gap or a change you are considering.",
     "detail": "A smile-design or cosmetic dental consultation can start with what you would like to discuss about your smile. Ask about the options, their limitations and the steps involved before choosing a procedure.",

@@ -364,3 +364,13 @@ dialog .doctor-reg{margin-top:-6px}
 .hero-doc-btn.is-active{background:var(--navy);color:var(--white)}
 .hero-doc-btn.is-active .hero-doc-role{color:#c9d6da}
 @media(max-width:570px){.hero-frame.hero-stage{aspect-ratio:.92}.hero-doc-btn{padding:9px 11px;min-height:50px}.hero-doc-name{font-size:12.5px}.hero-doc-role{font-size:9.5px}}
+
+/* Preview 03d: all services in one visible grid (no tabs) + social stack */
+.care-grid-all{grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
+.social-grid{display:grid;gap:14px;flex:1;width:100%;max-width:540px}
+@media(max-width:1024px){.care-grid-all{grid-template-columns:1fr 1fr}}
+@media(max-width:780px){.social-grid{max-width:none}}
+@media(max-width:570px){.care-grid-all{grid-template-columns:1fr;gap:18px}.care-grid-all .care-media{aspect-ratio:16/8.5}}
+
+/* New Dr. Praveen portrait: frame on face/desk, nameplate sliver removed */
+.hero-photo-joe{object-position:50% 4%}
