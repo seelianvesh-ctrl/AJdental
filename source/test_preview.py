@@ -37,7 +37,7 @@ async def main():
         assert metrics['reviews'] == 10, metrics
         assert len(set(metrics['reviewNames'])) == 10, metrics['reviewNames']
         assert metrics['forms'] == 0, 'No form may exist in Preview 02'
-        assert metrics['bookLinks'] >= 12, metrics
+        assert metrics['bookLinks'] >= 8, metrics
         assert metrics['telLinks'] >= 8, metrics
         assert metrics['bodyFont'] >= 17, metrics
         assert metrics['careCards'] == 4 and metrics['careImages'] == 4, metrics
@@ -49,10 +49,9 @@ async def main():
             assert required not in text if required == 'Kommanapalli Ashmi' else required in text, required
         results['checks'].append('Single canonical phone, confirmed address/hours, no implant price, no form, 10 unique named Google reviews, Telugu + Instagram present.')
 
-        # Per-service WhatsApp deep link carries the right context (read href only; never navigate).
+        # Service cards stay quiet: Details dialog carries the contextual WhatsApp booking (read href only; never navigate).
         card = p.locator('.care-item', has_text='Dental implants').first
-        href = await card.locator('.care-book').get_attribute('href')
-        assert 'dental implants' in unquote(href).lower(), href
+        assert await card.locator('.care-book').count() == 0, 'No per-card Book button'
         assert await card.locator('.care-call').get_attribute('href') == 'tel:+917997911390'
         await card.locator('.care-media').click()
         assert await p.locator('#detailDialog').is_visible()
@@ -60,7 +59,7 @@ async def main():
         dhref = await p.locator('#detailDialog .btn-primary').get_attribute('href')
         assert 'dental implants' in unquote(dhref).lower(), dhref
         await p.keyboard.press('Escape')
-        results['checks'].append('Service cards: image, per-service WhatsApp message, call link and details dialog all wired.')
+        results['checks'].append('Service cards: image, call link, details dialog with contextual WhatsApp booking.')
 
         # Nav Book Appointment is a direct WhatsApp anchor.
         navhref = await p.locator('.nav-action').get_attribute('href')
@@ -136,12 +135,13 @@ async def main():
           dockBook:document.querySelector('.mobile-dock .btn').textContent.trim(),
           bodyFont:parseFloat(getComputedStyle(document.body).fontSize),
           heroDesc:parseFloat(getComputedStyle(document.querySelector('.hero-description')).fontSize),
-          floatHidden:getComputedStyle(document.querySelector('.float-book')).display==='none'||parseFloat(getComputedStyle(document.querySelector('.float-book')).opacity)===0,
+          floatGone:!document.querySelector('.float-book')&&!document.querySelector('#floatBook'),
           images:[...document.images].filter(i=>i.getAttribute('src')&&(!i.complete||i.naturalWidth===0)).map(i=>i.alt)})''')
         assert mmetrics['scrollWidth'] <= mmetrics['width'], mmetrics
         assert mmetrics['dockDisplay'] == 'flex' and 'Book Appointment' in mmetrics['dockBook'], mmetrics
         assert mmetrics['bodyFont'] >= 16 and mmetrics['heroDesc'] >= 16, mmetrics
         assert not mmetrics['images'], mmetrics
+        assert mmetrics['floatGone'], 'Desktop float Book button must be gone'
         results['mobile'] = mmetrics
         # Review arrows on mobile.
         await mobile.locator('#reviewNext').scroll_into_view_if_needed()

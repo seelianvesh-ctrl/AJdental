@@ -276,5 +276,27 @@
       "image": "assets/extraction.webp"
     }
   ],
-  "services_note": "2026-10-15 user decision: services reduced to the 4 the client feedback named (implants, crowns/bridges, root canal, extractions/impactions). Check-ups, cleaning, fillings, braces, whitening, smile design cards removed as client did not request them."
+  "services_note": "2026-10-15 user decision: services reduced to the 4 the client feedback named (implants, crowns/bridges, root canal, extractions/impactions). Check-ups, cleaning, fillings, braces, whitening, smile design cards removed as client did not request them.",
+  "cta_policy": {
+    "decision_date": "2026-10-15",
+    "decision": "user: too many Book Appointment buttons - remove unwanted",
+    "keep": [
+      "desktop nav",
+      "mobile menu",
+      "hero",
+      "care-bottom consultation",
+      "wa-band",
+      "final CTA",
+      "mobile dock"
+    ],
+    "removed": [
+      "4 per-service card buttons (contextual booking stays in Details dialogs)",
+      "info-strip Book tile",
+      "doctors section Book (Call us kept)",
+      "visit section Book (Directions + Call kept)",
+      "footer WhatsApp text link",
+      "desktop floating Book button"
+    ],
+    "note": "noscript fallback link kept; dialog CTAs kept with context-specific messages"
+  }
 }

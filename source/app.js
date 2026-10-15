@@ -67,8 +67,8 @@ if('IntersectionObserver' in window) {
  const io = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) links.forEach(a => a.classList.toggle('is-current', a.getAttribute('href') === '#' + e.target.id)); }), {rootMargin:'-20% 0px -50% 0px', threshold:0});
  sections.forEach(s => io.observe(s));
 }
-/* Scroll progress, floating Book Appointment button and a whisper of hero parallax. */
-const progressBar = $('scrollProgress'); const floatBook = $('floatBook'); const heroStage = $('heroStage');
+/* Scroll progress and a whisper of hero parallax. */
+const progressBar = $('scrollProgress'); const heroStage = $('heroStage');
 let ticking = false;
 function onScroll() {
  if(ticking) return; ticking = true;
@@ -76,7 +76,6 @@ function onScroll() {
   const max = document.documentElement.scrollHeight - innerHeight;
   const y = window.scrollY || 0;
   progressBar.style.transform = `scaleX(${max > 0 ? Math.min(1, y / max) : 0})`;
-  floatBook.classList.toggle('show', y > 620);
   if(motionAllowed && heroStage && y < innerHeight) heroStage.style.transform = `translateY(${Math.min(14, y * 0.04)}px)`;
   ticking = false;
  });

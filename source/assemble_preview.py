@@ -38,7 +38,7 @@ def card(item, n):
             f'<img data-care-img="{item["id"]}" src="{img}" width="1000" height="558" loading="lazy" alt="{html.escape(item["alt"], quote=True)}">'
             f'<span class="care-chip" aria-hidden="true">Illustrative</span></button>'
             f'<div class="care-body"><span class="care-number" aria-hidden="true">{n:02}</span><h3>{html.escape(item["title"])}</h3><p>{html.escape(item["short"])}</p>'
-            f'<div class="care-actions"><a class="btn btn-primary care-book" href="{html.escape(item["wa_url"], quote=True)}" target="_blank" rel="noopener noreferrer">{CHAT} Book Appointment</a>'
+            f'<div class="care-actions">'
             f'<button class="care-more" data-care="{item["id"]}">Details</button>'
             f'<a class="care-call" href="tel:+917997911390" aria-label="Call AJ Dental about {html.escape(item["title"], quote=True)}">{PHONE}</a></div></div></article>')
 
@@ -106,7 +106,7 @@ assert len(site['reviews']) == 10 and all(r['source'] == 'Google' for r in site[
 assert len({r['name'] for r in site['reviews']}) == 10, 'Reviewer names must be unique'
 assert '<form' not in s and 'appointmentDialog' not in s and 'data-book' not in s, 'No forms or form-style booking may remain'
 assert 'Request a visit' not in s and 'Request your visit' not in s
-assert 'Book Appointment' in s and s.count('wa.me/917997911390?text=') >= 18, 'Direct WhatsApp deep links expected throughout'
+assert 'Book Appointment' in s and s.count('wa.me/917997911390?text=') >= 12, 'Direct WhatsApp deep links expected throughout'
 assert 'instagram.com/aj_dental_facial_aesthetics' in s
 assert 'facebook.com/people/AJ-Dental-Facial-Aesthetics' in s and 'youtube.com/@AJ_Dental_Facial_Aesthetics' in s
 assert 'Oral Physician & Radiologist' in s and 'Oral Medicine' not in s
