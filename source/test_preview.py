@@ -37,10 +37,10 @@ async def main():
         assert metrics['reviews'] == 10, metrics
         assert len(set(metrics['reviewNames'])) == 10, metrics['reviewNames']
         assert metrics['forms'] == 0, 'No form may exist in Preview 02'
-        assert metrics['bookLinks'] >= 18, metrics
+        assert metrics['bookLinks'] >= 12, metrics
         assert metrics['telLinks'] >= 8, metrics
         assert metrics['bodyFont'] >= 17, metrics
-        assert metrics['careCards'] == 10 and metrics['careImages'] == 10, metrics
+        assert metrics['careCards'] == 4 and metrics['careImages'] == 4, metrics
         results['desktop'] = metrics
         text = await p.locator('body').inner_text()
         for disallowed in ['9008553086', '9010000021', '7383581638', '₹25,000', 'Permanently closed', 'Request a visit', 'Request your visit']:
@@ -62,12 +62,11 @@ async def main():
         await p.keyboard.press('Escape')
         results['checks'].append('Service cards: image, per-service WhatsApp message, call link and details dialog all wired.')
 
-        # Journey tabs.
-        await p.locator('[data-journey="2"]').scroll_into_view_if_needed()
-        await p.locator('[data-journey="2"]').click()
-        assert 'step 3 of 4' in (await p.locator('#journeyCount').inner_text()).lower()
-        assert 'decide in your own time' in await p.locator('#journeyText').inner_text()
-        results['checks'].append('Interactive first-visit journey tabs update content accessibly.')
+        # First-visit journey: one static step line with a single Book Appointment CTA.
+        await p.locator('.journey').scroll_into_view_if_needed()
+        assert await p.locator('.journey-steps .journey-step').count() == 4
+        assert await p.locator('.journey .btn-primary').count() == 1
+        results['checks'].append('First-visit journey: simple 4-step line with a single Book Appointment CTA.')
 
         # Nav Book Appointment is a direct WhatsApp anchor.
         navhref = await p.locator('.nav-action').get_attribute('href')

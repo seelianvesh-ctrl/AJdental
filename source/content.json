@@ -253,5 +253,28 @@
       "whatsapp_click",
       "call_click"
     ]
-  }
+  },
+  "services": [
+    {
+      "id": "implants",
+      "title": "Dental implants",
+      "image": "assets/implants.webp"
+    },
+    {
+      "id": "dentures",
+      "title": "Crowns, bridges & dentures",
+      "image": "assets/dentures.webp"
+    },
+    {
+      "id": "root-canal",
+      "title": "Root canal treatment",
+      "image": "assets/rootcanal.webp"
+    },
+    {
+      "id": "extraction",
+      "title": "Extractions & impactions",
+      "image": "assets/extraction.webp"
+    }
+  ],
+  "services_note": "2026-10-15 user decision: services reduced to the 4 the client feedback named (implants, crowns/bridges, root canal, extractions/impactions). Check-ups, cleaning, fillings, braces, whitening, smile design cards removed as client did not request them."
 }

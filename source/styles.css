@@ -366,7 +366,7 @@ dialog .doctor-reg{margin-top:-6px}
 @media(max-width:570px){.hero-frame.hero-stage{aspect-ratio:.92}.hero-doc-btn{padding:9px 11px;min-height:50px}.hero-doc-name{font-size:12.5px}.hero-doc-role{font-size:9.5px}}
 
 /* Preview 03d: all services in one visible grid (no tabs) + social stack */
-.care-grid-all{grid-template-columns:repeat(3,1fr);gap:26px;align-items:stretch}
+.care-grid-all{grid-template-columns:repeat(2,1fr);gap:26px;align-items:stretch;max-width:1080px;margin-inline:auto}
 .social-grid{display:grid;gap:14px;flex:1;width:100%;max-width:540px}
 @media(max-width:1024px){.care-grid-all{grid-template-columns:1fr 1fr}}
 @media(max-width:780px){.social-grid{max-width:none}}
@@ -374,3 +374,16 @@ dialog .doctor-reg{margin-top:-6px}
 
 /* New Dr. Praveen portrait: frame on face/desk, nameplate sliver removed */
 .hero-photo-joe{object-position:50% 4%}
+
+/* Simplified journey steps - horizontal line, no tabs */
+.journey-steps{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;margin:1.25rem 0 1rem}
+.journey-step{display:flex;align-items:center;gap:0.375rem;color:var(--ink);font-size:0.875rem;font-weight:500;white-space:nowrap}
+.journey-num{font-size:0.75rem;font-weight:700;color:var(--brand);background:var(--brand-tint);padding:0.125rem 0.5rem;border-radius:999px}
+.journey-sep{color:var(--muted);font-size:1.25rem;line-height:1;margin:0 0.5rem}
+.journey-desc{text-align:center;color:var(--muted);font-size:0.9375rem;margin:0.75rem 0 1.25rem}
+@media (max-width:480px){
+  .journey-steps{gap:0.25rem}
+  .journey-step{gap:0.25rem;font-size:0.8125rem}
+  .journey-num{padding:0.125rem 0.375rem;font-size:0.6875rem}
+  .journey-sep{margin:0 0.25rem;font-size:1rem}
+}

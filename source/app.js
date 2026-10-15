@@ -97,35 +97,6 @@ function heroPause() { clearInterval(heroTimer); }
 heroBtns.forEach(b => b.addEventListener('click', () => { heroAuto = false; heroPause(); showHeroDoc(b.dataset.heroDoc); }));
 if(heroStage) { heroStage.addEventListener('pointerenter', heroPause); heroStage.addEventListener('pointerleave', heroPlay); heroStage.addEventListener('focusin', heroPause); heroStage.addEventListener('focusout', heroPlay); }
 heroPlay();
-/* First-visit journey: tap through the four steps. */
-const journeySteps = [
- 'Tap any Book Appointment button and WhatsApp opens with a message already written for you — just press send. Prefer speaking first? Call us instead.',
- 'When you come in, we listen first, then examine your teeth and gums. Bring your questions, plus any previous dental records or X-rays you have.',
- 'You’ll hear the options, what each one involves and the order to take them in — then decide in your own time. Nothing begins without your say-so.',
- 'After treatment, we explain your aftercare and when to return for a review, so your smile keeps the attention it needs.'
-];
-const jTabs = [...document.querySelectorAll('[data-journey]')];
-function activateJourney(tab, focus = false) {
- jTabs.forEach(t => { const on = t === tab; t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1; });
- const i = Number(tab.dataset.journey);
- $('journeyPanel').setAttribute('aria-labelledby', tab.id);
- $('journeyCount').textContent = `Step ${i + 1} of ${journeySteps.length}`;
- const text = $('journeyText');
- if(motionAllowed) { text.classList.remove('swap'); void text.offsetWidth; text.classList.add('swap'); }
- text.textContent = journeySteps[i];
- if(focus) tab.focus();
-}
-jTabs.forEach((tab, idx) => {
- tab.addEventListener('click', () => activateJourney(tab));
- tab.addEventListener('keydown', e => {
-  let target;
-  if(e.key === 'ArrowRight') target = (idx + 1) % jTabs.length;
-  else if(e.key === 'ArrowLeft') target = (idx - 1 + jTabs.length) % jTabs.length;
-  else if(e.key === 'Home') target = 0;
-  else if(e.key === 'End') target = jTabs.length - 1;
-  if(target !== undefined) { e.preventDefault(); activateJourney(jTabs[target], true); }
- });
-});
 /* Detail dialogs: every booking action is a direct WhatsApp deep link — no forms anywhere. */
 function showCare(id, trigger) {
  const item = care.find(x => x.id === id); if(!item) return;

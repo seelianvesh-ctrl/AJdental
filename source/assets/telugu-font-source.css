@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Noto Sans Telugu';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=0FlCVOGZlE2Rrtr-HmgkMWJNjJ5_RyT8o8c7fHkeg-esVDRT9vX3kR8cgXYNA_cq8ek7Q_MPXhrITS3r8OZjaiKS_ptPn7ggXdzdxKsD68C4RfYGy6-Bm1FCPmHggJ2BItN-bZJxzpuBhKspGNUxbW4SgcsXKAgIMXxtYlF2cplu2NVB1d94Ux1sRCaCTX1XCLF5E_YkczkW_J3X1Ss&skey=8177634b9b65b135&v=v30) format('woff2');
+  unicode-range: U+20, U+2c, U+30-31, U+38, U+3f, U+c02, U+c05, U+c09, U+c0e, U+c15, U+c17, U+c1a, U+c1c, U+c1f, U+c21, U+c23-c28, U+c2a-c2c, U+c2e-c30, U+c32, U+c35-c39, U+c3e-c41, U+c46-c47, U+c4a-c4b, U+c4d, U+2013;
+}
+@font-face {
+  font-family: 'Noto Sans Telugu';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=0FlCVOGZlE2Rrtr-HmgkMWJNjJ5_RyT8o8c7fHkeg-esVDRT9vX3kR8cgXYNA_cq8ek7Q_MPXhrITS3r8OZjaiKS_ptPn7ggXdzdxKsD68C4RfYGy6-Bm1FCPmHggJ2BItN-bZJxzpuBhKspGNUxbW4SgcsXKAgIMXxtYlF2cplu2NVB1d94Ux1sRCaCTX1XCLF5E_YkczkW_J3X1Ss&skey=8177634b9b65b135&v=v30) format('woff2');
+  unicode-range: U+20, U+2c, U+30-31, U+38, U+3f, U+c02, U+c05, U+c09, U+c0e, U+c15, U+c17, U+c1a, U+c1c, U+c1f, U+c21, U+c23-c28, U+c2a-c2c, U+c2e-c30, U+c32, U+c35-c39, U+c3e-c41, U+c46-c47, U+c4a-c4b, U+c4d, U+2013;
+}
+@font-face {
+  font-family: 'Noto Sans Telugu';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/l/font?kit=0FlCVOGZlE2Rrtr-HmgkMWJNjJ5_RyT8o8c7fHkeg-esVDRT9vX3kR8cgXYNA_cq8ek7Q_MPXhrITS3r8OZjaiKS_ptPn7ggXdzdxKsD68C4RfYGy6-Bm1FCPmHggJ2BItN-bZJxzpuBhKspGNUxbW4SgcsXKAgIMXxtYlF2cplu2NVB1d94Ux1sRCaCTX1XCLF5E_YkczkW_J3X1Ss&skey=8177634b9b65b135&v=v30) format('woff2');
+  unicode-range: U+20, U+2c, U+30-31, U+38, U+3f, U+c02, U+c05, U+c09, U+c0e, U+c15, U+c17, U+c1a, U+c1c, U+c1f, U+c21, U+c23-c28, U+c2a-c2c, U+c2e-c30, U+c32, U+c35-c39, U+c3e-c41, U+c46-c47, U+c4a-c4b, U+c4d, U+2013;
+}
