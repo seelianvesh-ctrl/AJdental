@@ -115,22 +115,7 @@ a.info-item:hover{background:#f3efe4}
 .care-bottom{margin-top:34px;align-items:center}
 .care-bottom p{font-size:16px;line-height:1.7;max-width:520px}
 .care-bottom .btn{flex:none}
-/* First-visit journey */
-.journey{margin-top:58px;border-top:1px solid var(--line);padding-top:46px}
-.journey .eyebrow{margin-bottom:14px}
-.journey-title{font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,40px);letter-spacing:-.02em;color:var(--navy)}
-.journey-tabs{display:flex;gap:12px;margin-top:28px}
-.journey-tab{flex:1;display:flex;align-items:center;gap:13px;text-align:left;border:1px solid var(--line);background:var(--white);border-radius:12px;padding:17px 19px;font-size:15.5px;font-weight:700;color:var(--navy);min-height:60px;transition:background .3s,color .3s,border-color .3s,transform .3s}
-.journey-tab:hover{transform:translateY(-2px)}
-.journey-tab .journey-num{font-family:var(--serif);font-size:21px;color:var(--gold);line-height:1}
-.journey-tab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
-.journey-tab[aria-selected="true"] .journey-num{color:var(--gold-light)}
-.journey-panel{margin-top:16px;background:var(--white);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:28px 30px;display:flex;justify-content:space-between;align-items:center;gap:34px}
-.journey-step-count{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-.journey-text{font-size:16.5px;line-height:1.8;color:var(--ink);max-width:640px}
-.journey-text.swap{animation:panel-in .4s var(--ease)}
-.journey-actions{display:flex;align-items:center;gap:20px;flex:none;flex-wrap:wrap}
-.journey-hint{font-size:13px;color:var(--muted);margin-top:14px}
+
 /* Doctors */
 .doctor-intro>p{font-size:16px;line-height:1.85}
 .doctor-cta{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:26px}
@@ -242,8 +227,8 @@ body.dialog-open .float-book{opacity:0!important;pointer-events:none!important}
 }
 @media(max-width:950px){
  .care-grid{grid-template-columns:repeat(2,1fr)}
- .journey-tabs{flex-wrap:wrap}
- .journey-tab{flex:1 1 42%}
+ 
+ 
  .wa-band-layout,.insta-layout{flex-direction:column;align-items:flex-start}
  .wa-band-actions{min-width:0;width:100%;max-width:420px}
 }
@@ -256,10 +241,10 @@ body.dialog-open .float-book{opacity:0!important;pointer-events:none!important}
  .care-tabs{gap:26px;overflow-x:auto;scrollbar-width:none}
  .care-tabs::-webkit-scrollbar{display:none}
  .care-tab{font-size:15px;white-space:nowrap}
- .journey-tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
- .journey-tabs::-webkit-scrollbar{display:none}
- .journey-tab{flex:0 0 auto;min-width:186px}
- .journey-panel{flex-direction:column;align-items:flex-start;padding:24px 22px}
+ 
+ 
+ 
+ 
  .review-card{flex-basis:86vw;min-height:330px}
  .info-title{font-size:13.5px}
  .info-text{font-size:12.5px}
@@ -374,16 +359,3 @@ dialog .doctor-reg{margin-top:-6px}
 
 /* New Dr. Praveen portrait: frame on face/desk, nameplate sliver removed */
 .hero-photo-joe{object-position:50% 4%}
-
-/* Simplified journey steps - horizontal line, no tabs */
-.journey-steps{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;margin:1.25rem 0 1rem}
-.journey-step{display:flex;align-items:center;gap:0.375rem;color:var(--ink);font-size:0.875rem;font-weight:500;white-space:nowrap}
-.journey-num{font-size:0.75rem;font-weight:700;color:var(--brand);background:var(--brand-tint);padding:0.125rem 0.5rem;border-radius:999px}
-.journey-sep{color:var(--muted);font-size:1.25rem;line-height:1;margin:0 0.5rem}
-.journey-desc{text-align:center;color:var(--muted);font-size:0.9375rem;margin:0.75rem 0 1.25rem}
-@media (max-width:480px){
-  .journey-steps{gap:0.25rem}
-  .journey-step{gap:0.25rem;font-size:0.8125rem}
-  .journey-num{padding:0.125rem 0.375rem;font-size:0.6875rem}
-  .journey-sep{margin:0 0.25rem;font-size:1rem}
-}
