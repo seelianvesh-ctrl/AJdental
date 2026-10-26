@@ -93,7 +93,7 @@ public_care = [{k: c[k] for k in ['id','title','short','detail','questions','wa_
 replacements = {
  'FONTS':'\n'.join(fonts),'CSS':(ROOT / 'styles.css').read_text(),'JS':(ROOT / 'app.js').read_text(),
  'MARK':data_uri('assets/aj-mark-ivory.webp','image/webp'),'FAVICON':data_uri('assets/aj-favicon.png','image/png'),'DOCTOR':data_uri('assets/doctor-ankitha.webp','image/webp'),'DOCTOR_JOE':data_uri('assets/doctor-joe.webp','image/webp'),
- 'CLINIC_1':data_uri('assets/clinic-inside-1.webp','image/webp'),'CLINIC_2':data_uri('assets/clinic-inside-2.webp','image/webp'),'EXTERIOR':data_uri('assets/clinic-exterior.webp','image/webp'),
+ 'RECEPTION':data_uri('assets/clinic-reception.webp','image/webp'),'OPERATORY':data_uri('assets/clinic-operatory.webp','image/webp'),'EXTERIOR':data_uri('assets/clinic-exterior.webp','image/webp'),
  'STARS':stars,'MAP':html.escape(site['maps_url'], quote=True),'DIRECTIONS':html.escape(site['directions_url'], quote=True),
  'WA_GENERAL':html.escape(WA_GENERAL, quote=True),'WA_AESTHETICS':html.escape(WA_AESTHETICS, quote=True),'WA_HAIR':html.escape(WA_HAIR, quote=True),
  'SCHEMA':json.dumps(schema, ensure_ascii=False).replace('</', '<\\/'),

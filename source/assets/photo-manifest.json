@@ -8,26 +8,6 @@
     "status": "Internal design preview only; current accuracy, rights and publication approval pending."
   },
   {
-    "name": "clinic-operatory",
-    "path": "assets/clinic-operatory.webp",
-    "source_id": "wheree-02",
-    "source_url": "https://static.where-e.com/India/Andhra_Pradesh/East_Godavari/Aj-Dental-And-Facial-Aesthetics_67dee75df3ecab017fed95e05553bfe1.jpg",
-    "alterations": "Crop/resize and minor non-generative colour/contrast correction only. No synthetic people or premises.",
-    "status": "No longer published. Internal design preview only; current accuracy, rights and publication approval pending.",
-    "published": false,
-    "superseded_by": "client-supplied clinic photographs (2026-10-26)"
-  },
-  {
-    "name": "clinic-reception",
-    "path": "assets/clinic-reception.webp",
-    "source_id": "wheree-06",
-    "source_url": "https://static.where-e.com/India/Andhra_Pradesh/East_Godavari/Aj-Dental-And-Facial-Aesthetics_cc7f93757c61b923caea407ba2a127d6.jpg",
-    "alterations": "Crop/resize and minor non-generative colour/contrast correction only. No synthetic people or premises.",
-    "status": "No longer published. Internal design preview only; current accuracy, rights and publication approval pending.",
-    "published": false,
-    "superseded_by": "client-supplied clinic photographs (2026-10-26)"
-  },
-  {
     "name": "clinic-exterior",
     "path": "assets/clinic-exterior.webp",
     "source_id": "wheree-04",
@@ -44,31 +24,31 @@
     "source_url": "https://content1.jdmagicbox.com/v2/comp/kakinada/n5/9999px884.x884.250712233030.r9n5/catalogue/aj-dental-and-facial-aesthetics-gandhi-nagar-kakinada-dentists-w49hnau8ra.jpg?w=1600&q=85"
   },
   {
-    "name": "clinic-inside-1",
-    "path": "assets/clinic-inside-1.webp",
-    "source_id": "client-whatsapp-2026-10-24-125607-1",
-    "source_file": "WhatsApp Image 2026-10-24 at 12.56.07 AM (1).jpeg (4032x2124)",
-    "source": "Client-supplied photograph of AJ Dental & Facial Aesthetics premises, received 24 Oct 2026",
-    "alterations": "Centre crop to the 1.45 display aspect ratio, resized to 1160x800, converted to WebP q82. No generative edits, no synthetic people or premises.",
-    "status": "Published. Client confirms they own the image and have consent from anyone recognisable in it. A standing figure was detected near the centre-right of the frame — confirm consent or supply a replacement frame.",
-    "published": true
-  },
-  {
-    "name": "clinic-inside-2",
-    "path": "assets/clinic-inside-2.webp",
-    "source_id": "client-whatsapp-2026-10-24-125606",
-    "source_file": "WhatsApp Image 2026-10-24 at 12.56.06 AM.jpeg (3024x3930)",
-    "source": "Client-supplied photograph of AJ Dental & Facial Aesthetics premises, received 24 Oct 2026",
-    "alterations": "Crop to the 1.35 display aspect ratio (biased to the upper third), resized to 1160x860, converted to WebP q82. No generative edits.",
-    "status": "Published. No faces detected. Client confirms ownership and that the room identification in the caption is accurate.",
-    "published": true
-  },
-  {
     "name": "NOT PUBLISHED — client photos held back",
     "path": null,
     "source_id": "client-whatsapp-2026-10-24",
     "source": "Four further client-supplied photographs received 24 Oct 2026",
     "alterations": null,
     "status": "Held back. Two show the clinic hoarding and a patient-education wall carrying text that contradicts confirmed site facts: the board reads \"10 AM to 8 PM\" (confirmed hours are 9 AM-8 PM) and lists a second number 8328369881 (confirmed number is 7997911390 only), and one board names Dr. M. Ankitha as \"Dr. Ankitha Masa\" (the client chose \"Dr. M. Ankitha\" on 2026-10-15). One further frame has a face detected in the lower third, so it needs consent. Re-submit once the board is corrected."
+  },
+  {
+    "name": "clinic-reception",
+    "path": "assets/clinic-reception.webp",
+    "source_id": "client-whatsapp-2026-10-24-125607-1",
+    "source_file": "WhatsApp Image 2026-10-24 at 12.56.07 AM (1).jpeg (4032x2124)",
+    "source": "Client-supplied photograph of the AJ reception, received 24 Oct 2026",
+    "alterations": "Centre crop to the 1.45 display aspect ratio, resized to 1160x800, WebP q82. No generative edits, no synthetic people or premises.",
+    "status": "Replaces a scraped third-party reception photo that was on the live site with rights pending. A standing figure was detected near the centre of frame — client to confirm consent, or supply a replacement frame.",
+    "published": true
+  },
+  {
+    "name": "clinic-operatory",
+    "path": "assets/clinic-operatory.webp",
+    "source_id": "client-whatsapp-2026-10-24-125606",
+    "source_file": "WhatsApp Image 2026-10-24 at 12.56.06 AM.jpeg (3024x3930)",
+    "source": "Client-supplied photograph of the AJ treatment room, received 24 Oct 2026",
+    "alterations": "Crop to the 1.35 display aspect ratio, biased to the upper third, resized to 1160x860, WebP q82. No generative edits.",
+    "status": "Replaces a scraped third-party operatory photo that was on the live site with rights pending. No faces detected. Room identification confirmed by the client on 2026-10-26.",
+    "published": true
   }
 ]
