@@ -7,7 +7,7 @@ Live site: **https://ajdental.vercel.app** · single self-contained `index.html`
 - **AJ-first branding** with the locked Ivory Primary logo (ivory tooth + navy face silhouette).
 - **Direct booking.** Every booking action opens WhatsApp (`wa.me/917997911390`) with a pre-written, context-specific message — per service, per doctor, aesthetics, hair. Call actions use `tel:+917997911390` everywhere applicable. No forms.
 - **10 unique named Google reviews** (verbatim quotes, keyword highlights): Deepika Cheemala, Tarun, Adhilaxmi Kondru, Venkat Korumilli, Balaram Potnuru, Surya Vardhan Dadala, Boddapati Vijayalaxmi, Yamdamuri Babykumari, Chandu Reddy K, Sindhu Yandamuri.
-- **4 core dental services** as photo cards (implants; crowns, bridges & dentures; root canal; extractions & impactions), each with contextual WhatsApp + call icon links and a details dialog.
+- **6 core dental services** as photo cards, led by our two specialities — **Orthodontics** (braces & aligners, Dr. B. Joe Praveen) and **Oral Medicine & Radiology** (Dr. M. Ankitha) — followed by Dental Implants, Crowns/Bridges & Dentures, Root Canal Treatment and Extractions & Impactions. Each has contextual WhatsApp + call icon links and a details dialog.
 - **Doctors presented together** — Dr. B. Joe Praveen (MDS · Orthodontist · Assistant Professor · Reg No: A16267) and Dr. M. Ankitha (MDS · Oral Physician & Radiologist · Asst. Professor · Reg No: A23045) — with portrait hero switcher and bio dialogs.
 - **Telugu warmth** (embedded Noto Sans Telugu subset): hero line "మీ చిరునవ్వు, మా బాధ్యత", welcome ribbon, and Telugu eyebrows.
 - **Polished UX:** researched type scale (body 17px desktop / 16.5px mobile), ≥48px tap targets, no overflow at 320–1440px or 200% zoom, scroll-reveal and micro-motion that honour `prefers-reduced-motion` (footer toggle), drag-to-scroll reviews, photo lightbox, sticky mobile Call/Book dock.
@@ -20,7 +20,8 @@ Live site: **https://ajdental.vercel.app** · single self-contained `index.html`
 - Address: **Road No. 3, Ayodhya Nagar, Kakinada, AP 533001**
 - AJ-first branding; "Jubeda Dental" appears only in one FAQ (returning patients) plus invisible schema `alternateName` — the footer line was removed 2026-10-15 after client feedback
 - No prices anywhere, including no implant fee
-- Service imagery is AI-generated and labelled "Illustrative" — not AJ patients or premises
+- Service imagery is AI-generated (3D jaw illustrations) and labelled "Illustrative" — not AJ patients or premises
+- Clinic photographs are **client-supplied originals** of the Ayodhya Nagar premises (received 24 Oct 2026); source files and consent status are recorded in `source/assets/photo-manifest.json`
 
 ## Testing (`evidence/` folder)
 
