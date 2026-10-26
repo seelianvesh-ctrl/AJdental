@@ -1,12 +1,44 @@
 [
   {
+    "id": "orthodontics",
+    "title": "Orthodontics",
+    "short": "Braces, aligners and a plan for crooked or crowded teeth.",
+    "detail": "Orthodontics looks at how the teeth and jaws line up. If you are considering braces or clear aligners — for yourself or your child — start with an assessment. Our orthodontist, Dr. B. Joe Praveen (MDS, Orthodontics, Reg No: A16267), will discuss whether treatment is suitable for you, the options available and roughly how long it may take.",
+    "booking": "Orthodontics consultation",
+    "image": "assets/orthodontics.webp",
+    "alt": "Illustrative image: a three-dimensional lower jaw with a full arch of teeth fitted with orthodontic braces and an archwire",
+    "wa": "Hi AJ Dental, I would like to book an orthodontic consultation about braces or aligners. Please let me know the available slots.",
+    "questions": [
+      "Am I suitable for braces or clear aligners?",
+      "How long would treatment take?",
+      "What would the visits and follow-up involve?"
+    ],
+    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20orthodontic%20consultation%20about%20braces%20or%20aligners.%20Please%20let%20me%20know%20the%20available%20slots."
+  },
+  {
+    "id": "oral-medicine",
+    "title": "Oral Medicine & Radiology",
+    "short": "Assessment and imaging for mouth ulcers, jaw pain and soft-tissue problems.",
+    "detail": "Oral medicine looks at conditions affecting the mouth, tongue and jaws — persistent ulcers, dryness, a burning sensation, jaw joint pain and changes in the soft tissues — and radiology covers the imaging used to understand them. Dr. M. Ankitha (MDS, Oral Medicine & Radiology, Reg No: A23045) will examine the area, advise whether an X-ray or scan is needed and discuss the findings with you.",
+    "booking": "Oral medicine consultation",
+    "image": "assets/oralmedicine.webp",
+    "alt": "Illustrative image: a three-dimensional lower jaw in front of a panoramic dental X-ray of the teeth and jaw joints",
+    "wa": "Hi AJ Dental, I would like to book an appointment for an oral medicine consultation. Please let me know the available slots.",
+    "questions": [
+      "What could be causing this symptom?",
+      "Do I need an X-ray or scan?",
+      "What would the assessment involve?"
+    ],
+    "wa_url": "https://wa.me/917997911390?text=Hi%20AJ%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20an%20oral%20medicine%20consultation.%20Please%20let%20me%20know%20the%20available%20slots."
+  },
+  {
     "id": "implants",
-    "title": "Dental implants",
+    "title": "Dental Implants",
     "short": "A conversation about replacing a missing tooth.",
     "detail": "If you are considering a dental implant, ask about an assessment and the options for replacing your missing tooth. We’ll discuss suitability, the treatment plan and our current availability with you at your consultation.",
     "booking": "Dental implant enquiry",
     "image": "assets/implants.webp",
-    "alt": "Illustrative image: a dentist explaining a dental implant model to a patient",
+    "alt": "Illustrative image: a three-dimensional lower jaw with a cutaway window showing a titanium implant in the bone, an abutment and a porcelain crown",
     "wa": "Hi AJ Dental, I would like to enquire about dental implants for a missing tooth. Please let me know the available slots for a consultation.",
     "questions": [
       "What options are appropriate in my situation?",
@@ -17,12 +49,12 @@
   },
   {
     "id": "dentures",
-    "title": "Crowns, bridges & dentures",
+    "title": "Crowns, Bridges & Dentures",
     "short": "Discuss ways to repair a damaged tooth or replace missing teeth.",
     "detail": "A crown can protect and rebuild a damaged tooth, while a bridge or dentures can replace missing teeth. Use a consultation to ask which option may suit you, what is involved in making and fitting it, and how to care for it over time.",
     "booking": "Crowns, bridges or dentures enquiry",
     "image": "assets/dentures.webp",
-    "alt": "Illustrative image: ceramic bridge work being prepared on a dental model",
+    "alt": "Illustrative image: a three-dimensional upper jaw with a three-unit porcelain bridge seated across a gap, beside a single crown and a partial denture",
     "wa": "Hi AJ Dental, I would like to book an appointment about a crown, bridge or dentures. Please let me know the available slots.",
     "questions": [
       "Would a crown, a bridge or dentures suit my situation?",
@@ -33,12 +65,12 @@
   },
   {
     "id": "root-canal",
-    "title": "Root canal treatment",
+    "title": "Root Canal Treatment",
     "short": "Explore the next step when a tooth needs attention on the inside.",
     "detail": "If you have a question about root canal treatment or a tooth that is troubling you, start with an assessment. We can discuss the concern with you and which options may be suitable.",
     "booking": "Root canal consultation",
     "image": "assets/rootcanal.webp",
-    "alt": "Illustrative image: root canal treatment using a dental microscope",
+    "alt": "Illustrative image: a three-dimensional lower jaw with one molar sectioned open showing the pulp chamber, the root canals and an endodontic file",
     "wa": "Hi AJ Dental, I would like to book an appointment about root canal treatment. Please let me know the available slots.",
     "questions": [
       "Is this treatment appropriate for my tooth?",
@@ -49,12 +81,12 @@
   },
   {
     "id": "extraction",
-    "title": "Extractions & impactions",
+    "title": "Extractions & Impactions",
     "short": "Ask about tooth removal, including impacted (wisdom) teeth.",
     "detail": "If you have been advised to consider removing a tooth — including an impacted wisdom tooth — discuss the assessment, options and aftercare with us. This website is not a substitute for that individual conversation.",
     "booking": "Tooth removal enquiry",
     "image": "assets/extraction.webp",
-    "alt": "Illustrative image: a dentist explaining a wisdom tooth on a jaw model before treatment",
+    "alt": "Illustrative image: a three-dimensional lower jaw with one molar being lifted from its socket with extraction forceps",
     "wa": "Hi AJ Dental, I would like to book an appointment about tooth removal or an impacted tooth. Please let me know the available slots.",
     "questions": [
       "Is removal the right next step for this tooth?",
