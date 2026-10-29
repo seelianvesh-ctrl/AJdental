@@ -107,7 +107,7 @@ function showCare(id, trigger) {
 function showDoctor(id, trigger) {
  const joe = id === 'joe';
  const name = joe ? 'Dr. B. Joe Praveen' : 'Dr. M. Ankitha';
- const role = joe ? 'MDS · Orthodontist · Assistant Professor' : 'MDS · Oral Physician & Radiologist · Asst. Professor';
+ const role = joe ? 'MDS · Orthodontist · Assistant Professor' : 'MDS · Oral Physician & Radiologist · Assistant Professor';
  const reg = joe ? 'Reg No: A16267' : 'Reg No: A23045';
  const text = joe ? 'Dr. B. Joe Praveen is our orthodontist and an Assistant Professor. He specialises in the diagnosis, prevention and correction of misaligned teeth and jaws, looking after patients who need braces, clear aligners, bite correction, teeth alignment and smile enhancement — helping them achieve a healthier, well-aligned and confident smile through personalised orthodontic care.' : 'Dr. M. Ankitha is a dental healthcare provider — MDS, Oral Physician & Radiologist, and an Assistant Professor. She authored the book “Cone Beam Computed Tomography: Oral and Maxillofacial Diagnosis & Applications”, which focuses on advanced dental radiography. She has also contributed to several international clinical research papers, exploring areas such as transcutaneous electrical nerve stimulation (TENS) on salivary flow in diabetic patients, maxillary odontomas, and forensic cheiloscopy.';
  const msg = joe ? 'Hi AJ Dental, I would like to book an orthodontic consultation with Dr. B. Joe Praveen. Please let me know the available slots.' : 'Hi AJ Dental, I would like to book an appointment with Dr. M. Ankitha. Please let me know the available slots.';
