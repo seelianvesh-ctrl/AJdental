@@ -119,8 +119,9 @@ function showDoctor(id, trigger) {
 /* Photo viewer uses only the actual business-gallery photos embedded in the file. */
 const photos = [
  {src:document.querySelector('[data-photo="0"] img').src,caption:'Our reception',alt:'The reception at AJ Dental & Facial Aesthetics in Ayodhya Nagar, Kakinada, with seating on both sides and our clinic sign'},
- {src:document.querySelector('[data-photo="1"] img').src,caption:'The treatment room',alt:'The dental treatment room at AJ Dental & Facial Aesthetics in Ayodhya Nagar, Kakinada'},
- {src:document.querySelector('[data-photo="2"] img').src,caption:'The AJ storefront · Road No. 3',alt:'AJ Dental signage and clinic entrance in Ayodhya Nagar'}
+ {src:document.querySelector('[data-photo="1"] img').src,caption:'The treatment room',alt:'The dental treatment room at AJ Dental & Facial Aesthetics in Ayodhya Nagar, Kakinada, with the dental chair, stool and operatory light'},
+ {src:document.querySelector('[data-photo="2"] img').src,caption:'Aesthetics treatment room',alt:'The aesthetics treatment room at AJ Dental & Facial Aesthetics in Ayodhya Nagar, Kakinada, with the treatment table, ring light and aesthetics equipment'},
+ {src:document.querySelector('[data-photo="3"] img').src,caption:'The AJ storefront · Road No. 3',alt:'AJ Dental signage and clinic entrance in Ayodhya Nagar'}
 ];
 let photoIndex = 0;
 function renderPhoto() {

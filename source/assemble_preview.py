@@ -2,7 +2,8 @@ from pathlib import Path
 from urllib.parse import quote
 import json, base64, html, re
 
-ROOT = Path('/home/user/aj-dental-website')
+ROOT = Path(__file__).resolve().parent  # source/ — inputs live next to this script
+OUT = ROOT.parent  # repo root — tracked index.html
 site = json.loads((ROOT / 'content.json').read_text())
 WA_BASE = site['whatsapp']  # https://wa.me/917997911390
 
@@ -93,7 +94,7 @@ public_care = [{k: c[k] for k in ['id','title','short','detail','questions','wa_
 replacements = {
  'FONTS':'\n'.join(fonts),'CSS':(ROOT / 'styles.css').read_text(),'JS':(ROOT / 'app.js').read_text(),
  'MARK':data_uri('assets/aj-mark-ivory.webp','image/webp'),'FAVICON':data_uri('assets/aj-favicon.png','image/png'),'DOCTOR':data_uri('assets/doctor-ankitha.webp','image/webp'),'DOCTOR_JOE':data_uri('assets/doctor-joe.webp','image/webp'),
- 'RECEPTION':data_uri('assets/clinic-reception.webp','image/webp'),'OPERATORY':data_uri('assets/clinic-operatory.webp','image/webp'),'EXTERIOR':data_uri('assets/clinic-exterior.webp','image/webp'),
+ 'RECEPTION':data_uri('assets/clinic-reception.webp','image/webp'),'OPERATORY':data_uri('assets/clinic-operatory.webp','image/webp'),'AESTHETICS':data_uri('assets/clinic-aesthetics.webp','image/webp'),'EXTERIOR':data_uri('assets/clinic-exterior.webp','image/webp'),
  'STARS':stars,'MAP':html.escape(site['maps_url'], quote=True),'DIRECTIONS':html.escape(site['directions_url'], quote=True),
  'WA_GENERAL':html.escape(WA_GENERAL, quote=True),'WA_AESTHETICS':html.escape(WA_AESTHETICS, quote=True),'WA_HAIR':html.escape(WA_HAIR, quote=True),
  'SCHEMA':json.dumps(schema, ensure_ascii=False).replace('</', '<\\/'),
@@ -137,7 +138,7 @@ assert 'A16267' in s and 'A23045' in s, 'Doctor registration numbers must appear
 assert 'Dr. B. Joe Praveen' in s and 'Dr. M. Ankitha' in s, 'Visiting-card doctor names must appear'
 assert 'Ankitha Masa' not in s, 'Use the visiting-card name Dr. M. Ankitha everywhere'
 (ROOT / 'AJ_Dental_Preview.html').write_text(s)
-(ROOT / 'index.html').write_text(s)
+(OUT / 'index.html').write_text(s)
 print('Generated self-contained HTML:', len(s.encode()), 'bytes; Google reviews:', len(site['reviews']), 'of', site['review_policy']['target_count'])
 print('Services with illustrative images:', len(CARE), '; WhatsApp deep links:', s.count('wa.me/917997911390?text='), '; tel links:', s.count('tel:+917997911390'))
 print('Fonts embedded: Instrument Serif, Manrope, Noto Sans Telugu subset; external runtime assets: 0')

@@ -10,10 +10,12 @@
   {
     "name": "clinic-exterior",
     "path": "assets/clinic-exterior.webp",
-    "source_id": "wheree-04",
-    "source_url": "https://static.where-e.com/India/Andhra_Pradesh/East_Godavari/Aj-Dental-And-Facial-Aesthetics_fedd51680e1d1c87fd86753a735b0f75.jpg",
-    "alterations": "Crop/resize and minor non-generative colour/contrast correction only. No synthetic people or premises.",
-    "status": "Internal design preview only; current accuracy, rights and publication approval pending."
+    "source_id": "client-upload-2026-10-29-storefront",
+    "source_file": "AJ Dental & Facial Aesthetics Storefront (1).png (1136x1385)",
+    "source": "Client-supplied storefront photograph, received 29 Oct 2026",
+    "alterations": "Top-anchored crop preserving the full corrected clinic board and the entrance, resized to 760x750, WebP q82. No generative edits, no synthetic people or premises.",
+    "status": "Replaces the scraped where-e.com storefront photo that was on the live site with rights pending. This is the final re-submission after the board was corrected: it shows 9 AM to 8 PM, the single confirmed number +91 79979 11390, 'Dr. M. Ankitha' (not 'Dr. Ankitha Masa') and the confirmed registration number A16267. All board facts now match confirmed site facts. An earlier frame (29 Oct 2026) showed 'A18667' and was superseded by this photo.",
+    "published": true
   },
   {
     "name": "aj-mark",
@@ -29,7 +31,7 @@
     "source_id": "client-whatsapp-2026-10-24",
     "source": "Four further client-supplied photographs received 24 Oct 2026",
     "alterations": null,
-    "status": "Held back. Two show the clinic hoarding and a patient-education wall carrying text that contradicts confirmed site facts: the board reads \"10 AM to 8 PM\" (confirmed hours are 9 AM-8 PM) and lists a second number 8328369881 (confirmed number is 7997911390 only), and one board names Dr. M. Ankitha as \"Dr. Ankitha Masa\" (the client chose \"Dr. M. Ankitha\" on 2026-10-15). One further frame has a face detected in the lower third, so it needs consent. Re-submit once the board is corrected."
+    "status": "Two of the four re-submitted and published 29 Oct 2026: the corrected clinic-board storefront photograph (clinic-exterior) and the dental treatment room (clinic-operatory). Still held back: the patient-education wall frame carrying text that contradicts confirmed site facts (board reads \"10 AM to 8 PM\" — confirmed hours are 9 AM–8 PM — and lists a second number 8328369881 — confirmed number is 7997911390 only — and one board names Dr. M. Ankitha as \"Dr. Ankitha Masa\" — the client chose \"Dr. M. Ankitha\" on 2026-10-15), and one frame with a face detected in the lower third that needs consent. Re-submit once the wall board is corrected."
   },
   {
     "name": "clinic-reception",
@@ -44,11 +46,21 @@
   {
     "name": "clinic-operatory",
     "path": "assets/clinic-operatory.webp",
+    "source_id": "client-upload-2026-10-29-treatment-room",
+    "source_file": "The Treatment Room.jpeg (2268x2967)",
+    "source": "Client-supplied photograph of the AJ dental treatment room, received 29 Oct 2026",
+    "alterations": "Crop to the 1.35 display aspect ratio (upper two-thirds: full room, chair and stool in frame), resized to 1160x860, WebP q82. No generative edits.",
+    "status": "Replaces the 24 Oct 2026 photo in this slot, which turned out to be the aesthetics room — that photo is now published as 'clinic-aesthetics'. No faces detected.",
+    "published": true
+  },
+  {
+    "name": "clinic-aesthetics",
+    "path": "assets/clinic-aesthetics.webp",
     "source_id": "client-whatsapp-2026-10-24-125606",
     "source_file": "WhatsApp Image 2026-10-24 at 12.56.06 AM.jpeg (3024x3930)",
-    "source": "Client-supplied photograph of the AJ treatment room, received 24 Oct 2026",
-    "alterations": "Crop to the 1.35 display aspect ratio, biased to the upper third, resized to 1160x860, WebP q82. No generative edits.",
-    "status": "Replaces a scraped third-party operatory photo that was on the live site with rights pending. No faces detected. Room identification confirmed by the client on 2026-10-26.",
+    "source": "Client-supplied photograph received 24 Oct 2026; identified by the client on 29 Oct 2026 as the aesthetics treatment room (it was previously carried as the treatment-room photo).",
+    "alterations": "Unchanged from the 24 Oct 2026 processing: crop to the 1.35 display aspect ratio, resized to 1160x860, WebP q82. No generative edits.",
+    "status": "Shown on the site as 'Aesthetics treatment room'. No faces detected.",
     "published": true
   }
 ]
